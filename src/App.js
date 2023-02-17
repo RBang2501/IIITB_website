@@ -4,12 +4,14 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 
 import { Navbar } from "./components/Navbar";
 import { Megamenu } from "./components/Megamenu";
+// import {Menubar} from "./components/Menubar"
 
 function App() {
   return (
     <>
       <Navbar/>
       <Megamenu/>
+      {/* <Menubar/> */}
     </>
    );
 
@@ -35,7 +37,7 @@ function App() {
 
 
 
-   
+
 }
 
 export default App;
