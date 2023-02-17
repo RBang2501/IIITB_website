@@ -1,3 +1,47 @@
-#megamenu-button :hover{
-    color:black !important;
+.event-carousel-img {
+    filter: brightness(50%);
+}
+
+/* .event-carousel-caption {
+    transform: translate(0px, -100px) !important;
+    transition: transform 2s linear 1s !important;
+} */
+
+.event-carousel-caption{
+    transform: translate(0px, -100px) !important;
+    opacity: 0;
+}
+
+.event-carousel-item:hover .event-carousel-caption{
+    opacity: 1;
+    transform: translate(0px, -200px) !important;
+    color: yellow;
+    font-size: 12px;
+    transition-property: transform, opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+}
+
+.carousel-control-prev{
+    opacity: 0 ;
+    transform: translateX(-100px);
+}
+.carousel-control-next{
+    opacity: 0 ;
+    transform: translateX(100px);
+}
+.event-carousel:hover .carousel-control-prev{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+}
+
+.event-carousel:hover .carousel-control-next{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform !important;
+    transition-timing-function:linear;
+    transition-duration: 0.5s;
 }

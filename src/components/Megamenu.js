@@ -1,11 +1,7 @@
 import * as React from 'react';
 import '../assets/styles/megamenu.css';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import { Button, ButtonGroup, Paper, Divider, Stack, Menu, MenuItem } from '@mui/material';
 import Fade from '@mui/material/Fade';
-import { Divider } from '@mui/material';
 
 export const Megamenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -31,18 +27,22 @@ export const Megamenu = () => {
       </Button>
 
       <Stack direction="row" spacing={2}>
-        <Button id='megamenu-button' variant='outlined'>Academics</Button>
-        <Button className='megamenu-button' variant='outlined'>Campus Life</Button>
-        <Button className='megamenu-button' variant='outlined'>Media</Button>
-        <Button className='megamenu-button' variant='outlined'>People</Button>
-        <Button className='megamenu-button' variant='outlined'>About Us</Button>
-        <Button className='megamenu-button' variant="outlined">Primary</Button>
-        <Button className='megamenu-button' variant="outlined" disabled>
+        {/* <ButtonGroup  variant="outlined" aria-label="outlined primary button group" >
+          <Button style={{textTransform:'capitalize'}}>Research</Button>
+          <Button style={{textTransform:'capitalize'}}>Academics</Button>
+          <Button style={{textTransform:'capitalize'}}>Campus Life</Button>
+          <Button style={{textTransform:'capitalize'}}>Media</Button>
+        </ButtonGroup> */}
+        <Button sx={{ bgcolor: 'rgba(77,125,242,.1)', ':hover': { bgcolor: '#e1bee7', color: 'white', }, }} variant='outlined' >Academics</Button>
+        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>Campus Life</Button>
+        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>Media</Button>
+        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>People</Button>
+        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>About Us</Button>
+        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant="outlined">Primary</Button>
+        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant="outlined" disabled>
           Disabled
         </Button>
-        <Button variant="outlined" href="#outlined-buttons">
-          Link
-        </Button>
+
       </Stack>
 
       <Menu
@@ -55,11 +55,26 @@ export const Megamenu = () => {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <Divider style={{ margin: '0.1px 0px 0.1px 0px' }} />
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <Divider style={{ margin: '0.1px 0px 0.1px 0px' }} />
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <Stack direction='row'>
+          <Stack direction='column'>
+            <MenuItem onClick={handleClose}>Centres</MenuItem>
+            <MenuItem onClick={handleClose}>Labs</MenuItem>
+            <MenuItem onClick={handleClose}>Outreach</MenuItem>
+            <MenuItem onClick={handleClose}>Publications</MenuItem>
+            <MenuItem onClick={handleClose}>Policy</MenuItem>
+          </Stack>
+
+          <Divider variant='middle'color='black' sx={{ borderRightWidth: 1 }}/>
+          <Stack direction='column'>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
+          </Stack>
+        </Stack>
+
       </Menu>
     </div>
   );
