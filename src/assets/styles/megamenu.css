@@ -1,5 +1,12 @@
 .event-carousel-img {
+    filter: brightness(100%);
+}
+.active .event-carousel-img {
     filter: brightness(50%);
+    transition-property: filter !important;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+    transition-delay: 0s;
 }
 
 /* .event-carousel-caption {
@@ -12,14 +19,15 @@
     opacity: 0;
 }
 
-.event-carousel-item:hover .event-carousel-caption{
+.active .event-carousel-caption{
     opacity: 1;
     transform: translate(0px, -200px) !important;
-    color: yellow;
+    /* color: white; */
     font-size: 12px;
     transition-property: transform, opacity !important;
     transition-timing-function: ease-out;
     transition-duration: 2s;
+    transition-delay: 0s;
 }
 
 .carousel-control-prev{

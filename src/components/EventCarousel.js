@@ -9,7 +9,7 @@ export const EventCarousel = () => {
     return (
         <div className='container px-0' >
             <Carousel pause='false' fade className='event-carousel mx-0 px-0'>
-                <Carousel.Item interval={2000} className='event-carousel-item' style={{height:'70vh'}}>
+                <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
                         className="d-block w-100 event-carousel-img"
                         src={img3}
@@ -20,7 +20,7 @@ export const EventCarousel = () => {
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={2000} className='event-carousel-item' style={{height:'70vh'}}>
+                <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
                         className="d-block w-100 event-carousel-img"
                         src={img1}
@@ -31,7 +31,7 @@ export const EventCarousel = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={2000} className='event-carousel-item' style={{height:'70vh'}}>
+                <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
                         className="d-block w-100 event-carousel-img"
                         src={img2}
