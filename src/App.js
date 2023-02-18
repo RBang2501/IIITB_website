@@ -5,15 +5,15 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 import { Navbar } from "./components/Navbar";
 import { Megamenu } from "./components/Megamenu";
 import { EventCarousel} from "./components/EventCarousel"
-// import {Menubar} from "./components/Menubar"
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Megamenu/>
-      <EventCarousel/>
-      {/* <Menubar/> */}
+      {/* <Megamenu/> */}
+      {/* <EventCarousel/> */}
+      <Footer/>
     </>
    );
 
