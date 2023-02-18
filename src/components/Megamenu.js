@@ -34,14 +34,14 @@ export const Megamenu = () => {
           <Button style={{textTransform:'capitalize'}}>Media</Button>
         </ButtonGroup> */}
         <Button sx={{ bgcolor: 'rgba(77,125,242,.1)', ':hover': { bgcolor: '#e1bee7', color: 'white', }, }} variant='outlined' >Academics</Button>
-        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>Campus Life</Button>
+        {/* <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>Campus Life</Button>
         <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>Media</Button>
         <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>People</Button>
         <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>About Us</Button>
         <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant="outlined">Primary</Button>
         <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant="outlined" disabled>
           Disabled
-        </Button>
+        </Button> */}
 
       </Stack>
 
