@@ -57,3 +57,13 @@
 .Embed > .Caption{
     display: none !important;
 }
+
+.event-carousel{
+    border-radius: 0px 0px 5px 5px !important;
+    overflow: hidden;
+}
+
+.megamenu-links > a:hover{
+    background-color: grey !important;
+    color:white !important;
+}

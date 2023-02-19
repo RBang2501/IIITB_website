@@ -9,8 +9,8 @@ import img5 from '../assets/images/5.jpeg';
 
 export const EventCarousel = () => {
     return (
-        // <div className='mx-auto px-0' style={{width:'95%'}} >
-            <Carousel pause='false' fade className='event-carousel mx-0 px-0'>
+        <div className='mx-auto rounded shadow-lg pt-5 border mt-3' style={{width:'96%', height:'80vh'}} >
+            <Carousel pause='false' fade className='event-carousel mx-0 px-0 rounded'>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
                         className="d-block w-100 event-carousel-img"
@@ -50,6 +50,6 @@ export const EventCarousel = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-        // </div>
+        </div>
     );
 }

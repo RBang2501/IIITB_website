@@ -1,3 +1,8 @@
+body{
+  background-color: #eef0ff !important;
+  font-family: 'kanit' !important;
+}
+
 .App {
   text-align: center;
 }

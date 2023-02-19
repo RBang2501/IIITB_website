@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 
-import { Navbar } from "./components/Navbar";
+import { NavigationBar } from "./components/NavigationBar";
 import { Megamenu } from "./components/Megamenu";
 import { EventCarousel } from "./components/EventCarousel"
 import { NewsEvents } from "./components/NewsEvents"
@@ -19,8 +19,8 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Megamenu />
+      <NavigationBar />
+      {/* <Megamenu /> */}
       <EventCarousel />
       <NewsEvents />
       <SocialMediaEmbed />
