@@ -23,22 +23,22 @@ export const Megamenu = () => {
   const Sec2Elements = []
   const Sec1Array = ["Centers", "Labs", "Outreach", "Publications", "Policy"]
   const Sec2Contents = {
-    "Centers":  ["cen", "cen1", "cen2", "cen3"],
-    "Labs" :    ["lab", "lab1", "lab2", "lab3"],
-    "Outreach" :["out", "out1", "out2", "out3"],
-    "Publications" : ["pub", "pub1", "pub2", "pub3"],
-    "Policy" :    ["pol", "pol1", "pol2", "pol3"],
+    "Centers": ["cen", "cen1", "cen2", "cen3"],
+    "Labs": ["lab", "lab1", "lab2", "lab3"],
+    "Outreach": ["out", "out1", "out2", "out3"],
+    "Publications": ["pub", "pub1", "pub2", "pub3"],
+    "Policy": ["pol", "pol1", "pol2", "pol3"],
   }
 
-  for(let heading of Sec1Array){
+  for (let heading of Sec1Array) {
     Sec1Elements.push(
-      <MenuItem onMouseOver={()=>{handleContentChange(heading)}}>{heading}</MenuItem>
+      <MenuItem onMouseOver={() => { handleContentChange(heading) }}>{heading}</MenuItem>
     )
   }
-  for(let subHeading of Sec2Contents[currSec1])
-      Sec2Elements.push(
-        <MenuItem onClick={handleClose}>{subHeading}</MenuItem>
-      )
+  for (let subHeading of Sec2Contents[currSec1])
+    Sec2Elements.push(
+      <MenuItem onClick={handleClose}>{subHeading}</MenuItem>
+    )
 
   return (
     <div className='m-3'>
@@ -54,22 +54,7 @@ export const Megamenu = () => {
       </Button>
 
       <Stack direction="row" spacing={2}>
-        {/* <ButtonGroup  variant="outlined" aria-label="outlined primary button group" >
-          <Button style={{textTransform:'capitalize'}}>Research</Button>
-          <Button style={{textTransform:'capitalize'}}>Academics</Button>
-          <Button style={{textTransform:'capitalize'}}>Campus Life</Button>
-          <Button style={{textTransform:'capitalize'}}>Media</Button>
-        </ButtonGroup> */}
         <Button sx={{ bgcolor: 'rgba(77,125,242,.1)', ':hover': { bgcolor: '#e1bee7', color: 'white', }, }} variant='outlined' >Academics</Button>
-        {/* <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>Campus Life</Button>
-        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>Media</Button>
-        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>People</Button>
-        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant='outlined'>About Us</Button>
-        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant="outlined">Primary</Button>
-        <Button sx={{ ':hover': { bgcolor: 'pink', color: 'white', }, }} variant="outlined" disabled>
-          Disabled
-        </Button> */}
-
       </Stack>
 
       <Menu
@@ -87,7 +72,7 @@ export const Megamenu = () => {
             {Sec1Elements}
           </Stack>
 
-          <Divider variant='middle'color='black' sx={{ borderRightWidth: 1 }}/>
+          <Divider variant='middle' color='black' sx={{ borderRightWidth: 1 }} />
           <Stack direction='column'>
             {Sec2Elements}
           </Stack>
