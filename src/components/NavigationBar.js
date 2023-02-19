@@ -19,7 +19,8 @@ import jublee from "../assets/jublee.png"
 
 export const NavigationBar = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [currSec1, setCurrSec1] = React.useState("Centers");
+  const [currSec1, setCurrSec1] = React.useState("");
+  const [currMain, setCurrMain] = React.useState(null);
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -31,32 +32,66 @@ export const NavigationBar = () => {
 
   const handleContentChange = (heading) => {
     setCurrSec1(heading)
-    
   }
 
+  const handleMainSelect = (mainHead) => {
+    setCurrMain(mainHead)
+    setCurrSec1("")
+    console.log("main", mainHead)
+  }
+
+  const MainElements = []
   const Sec1Elements = []
   const Sec2Elements = []
-  const Sec1Array = ["Centers", "Labs", "Outreach", "Publications", "Policy"]
+  const MainNav = ["Research", "Academics", "Campus Life", "Media", "People", "About Us"]
+  const Sec1Array = {
+    "Research" : ["Centers", "Labs", "Outreach", "Publications", "Policy"],
+    "Academics": ["Domains" ,"Programms"],
+    "Campus Life" : ["Events", "Cafeteria"],
+    "Media" : ["Media Kit", "Naviina"],
+    "People": ["Faculty", "Staff"],
+    "About Us": ["Partnership", "Explore"],
+  }
   const Sec2Contents = {
+    "": [],
     "Centers": ["cen", "cen1", "cen2", "cen3"],
     "Labs": ["lab", "lab1", "lab2", "lab3"],
     "Outreach": ["out", "out1", "out2", "out3"],
     "Publications": ["pub", "pub1", "pub2", "pub3"],
     "Policy": ["pol", "pol1", "pol2", "pol3"],
+    "Domains": ["dom1", "dom2", "dom3"],
+    "Programms": ["pr1", "pr2"],
+    "Events":[],
+    "Cafeteria":[],
+    "Media Kit": [],
+    "Naviina": [],
+    "Faculty": [],
+    "Staff": [],
+    "Partnership": [],
+    "Explore": [],
   }
 
-  for (let heading of Sec1Array) {
-    let bgcolor = "white";
-    if(currSec1 == heading)
-      bgcolor = "grey"
-    Sec1Elements.push(
-      <MenuItem style={{ fontFamily: 'kanit', background: bgcolor}} onMouseOver={() => { handleContentChange(heading) }}>{heading}</MenuItem>
+  for(let mainHead of MainNav){
+    MainElements.push(
+      <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action1" onClick={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
     )
   }
-  for (let subHeading of Sec2Contents[currSec1])
-    Sec2Elements.push(
-      <MenuItem style={{ fontFamily: 'kanit', }} onClick={handleClose}>{subHeading}</MenuItem>
-    )
+
+  if(currMain){
+    console.log("curr", Sec1Array[currMain])
+    for (let heading of Sec1Array[currMain]) {
+      let bgcolor = "white";
+      if(currSec1 == heading)
+        bgcolor = "grey"
+      Sec1Elements.push(
+        <MenuItem style={{ fontFamily: 'kanit', background: bgcolor}} onMouseOver={() => { handleContentChange(heading);}}>{heading}</MenuItem>
+      )
+    }
+    for (let subHeading of Sec2Contents[currSec1])
+      Sec2Elements.push(
+        <MenuItem style={{ fontFamily: 'kanit', }} onClick={handleClose}>{subHeading}</MenuItem>
+      )
+  }
 
   return (
     <>
@@ -87,12 +122,7 @@ export const NavigationBar = () => {
               {/* </div> */}
               <div className='mx-auto w-100 row'>
                 <div className='col-8 megamenu-links'>
-                  <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action1" onMouseOver={handleClick} onClick={handleClose}>Research</Nav.Link>
-                  <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action2">Academics</Nav.Link>
-                  <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action3">Campus Life</Nav.Link>
-                  <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action4">Media</Nav.Link>
-                  <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action5">People</Nav.Link>
-                  <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action6">About Us</Nav.Link>
+                {MainElements}
                 </div>
                 <div className='col-4' style={{ textAlign: 'end' }}>
                   <Nav.Link className='border-end  text-center' style={{ fontFamily: 'kanit', display: 'inline-block', color: 'rgb(6,82,154)' }} href="#action1">NIRF</Nav.Link>
@@ -115,6 +145,7 @@ export const NavigationBar = () => {
                 <Stack direction='row'>
                   <Stack style={{width: '150px' }} direction='column'>
                     {Sec1Elements}
+                    {console.log(Sec1Elements)}
                   </Stack>
 
                   <Divider variant='middle' color='grey' sx={{ borderRightWidth: 1 }} />
