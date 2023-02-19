@@ -15,7 +15,7 @@
 } */
 
 .event-carousel-caption{
-    transform: translate(0px, -100px) !important;
+    transform: translate(0px, -150px) !important;
     opacity: 0;
 }
 
@@ -32,24 +32,28 @@
 
 .carousel-control-prev{
     opacity: 0 ;
-    transform: translateX(-100px);
+    /* transform: translateX(-20px); */
 }
 .carousel-control-next{
     opacity: 0 ;
-    transform: translateX(100px);
+    /* transform: translateX(20px); */
 }
 .event-carousel:hover .carousel-control-prev{
     opacity: 1;
-    transform: translateX(0px);
-    transition-property: transform !important;
+    /* transform: translateX(0px); */
+    transition-property: opacity !important;
     transition-timing-function: ease-out;
     transition-duration: 0.5s;
 }
 
 .event-carousel:hover .carousel-control-next{
     opacity: 1;
-    transform: translateX(0px);
-    transition-property: transform !important;
+    /* transform: translateX(0px); */
+    transition-property: opacity !important;
     transition-timing-function:linear;
     transition-duration: 0.5s;
+}
+
+.Embed > .Caption{
+    display: none !important;
 }

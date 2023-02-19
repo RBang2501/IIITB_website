@@ -1,0 +1,57 @@
+#why1, #why2,#why3,#why4,#why5,#why6{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.act #why1{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.act #why2{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.act #why3{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+}
+
+.act #why4{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 1.5s;
+}
+
+.act #why5{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 2s;
+}
+
+.act #why6{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 2.5s;
+}

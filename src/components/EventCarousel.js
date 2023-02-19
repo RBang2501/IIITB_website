@@ -1,3 +1,5 @@
+import * as React from 'react';
+// import Button from '@mui/material/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../assets/images/1.jpeg';
 import img2 from '../assets/images/2.jpeg';
@@ -7,7 +9,7 @@ import img5 from '../assets/images/5.jpeg';
 
 export const EventCarousel = () => {
     return (
-        <div className='container px-0' >
+        // <div className='mx-auto px-0' style={{width:'95%'}} >
             <Carousel pause='false' fade className='event-carousel mx-0 px-0'>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
@@ -18,6 +20,7 @@ export const EventCarousel = () => {
                     <Carousel.Caption className='event-carousel-caption'>
                         <h3>First slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <button className='btn btn-light'>Know More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
@@ -29,6 +32,7 @@ export const EventCarousel = () => {
                     <Carousel.Caption className='event-carousel-caption'>
                         <h3>Second slide label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button className='btn btn-light'>Know More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
@@ -42,9 +46,10 @@ export const EventCarousel = () => {
                         <p>
                             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                         </p>
+                        <button className='btn btn-light'>Know More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-        </div>
+        // </div>
     );
 }
