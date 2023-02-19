@@ -95,14 +95,6 @@ export const Whyiiitb = () => {
                             </div>
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <AutoStoriesIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
-                                    <CountUp enableScrollSpy end={358} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>iMTech</h6>
-                                </div>
-                            </div>
-
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
                                 <RocketLaunchIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={50} duration={2}></CountUp>
@@ -128,6 +120,14 @@ export const Whyiiitb = () => {
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
                                 <SchoolIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                                    <CountUp enableScrollSpy end={3500} duration={2}></CountUp>
+                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Alumni</h6>
+                                </div>
+                            </div>
+
+                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
+                                <AutoStoriesIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={1200} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Publications</h6>
