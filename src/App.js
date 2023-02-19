@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 import college_logo from "./assets/college_logo.jpg";
 import Box from "@mui/material/Box";
 
-import { Navbar } from "./components/Navbar";
+import { NavigationBar } from "./components/NavigationBar";
 import { Megamenu } from "./components/Megamenu";
 import { EventCarousel} from "./components/EventCarousel"
 import { Footer } from "./components/Footer"
@@ -63,8 +63,8 @@ export const App = () => {
       ) 
       : (
         <>
-          <Navbar />
-          <Megamenu />
+          <NavigationBar />
+          {/* <Megamenu /> */}
           <EventCarousel />
           <NewsEvents />
           <SocialMediaEmbed />
@@ -75,38 +75,6 @@ export const App = () => {
     </div>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

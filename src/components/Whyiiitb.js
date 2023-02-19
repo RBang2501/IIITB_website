@@ -3,6 +3,11 @@ import CountUp from 'react-countup';
 import { fadeIn } from 'react-animations'
 
 import img1 from "../assets/images/iiitb.png"
+
+import books from "../assets/images/books.png";
+import college from "../assets/images/college.png";
+
+
 import "../assets/styles/whyiiitb.css"
 
 function reveal() {
@@ -39,8 +44,16 @@ export const Whyiiitb = () => {
                         <h5 id="why5">Excellent peer group</h5>
                         <h5 id="why6">Global exchange opportunity</h5>
                     </div>
-                    <div className="col-6">
-                        <CountUp end={100} duration={5}></CountUp>
+                    <div className="col-6 row row-cols-lg-4 g-2 gx-5">
+                        <div className="col bg-white border"><img className='w-100' src={books}/></div>
+                        <div className="col bg-white border"><img className='w-100' src={books}/></div>
+                        <div className="col bg-white border"><img className='w-100' src={books}/></div>
+                        <div className="col bg-white border"><img className='w-100' src={books}/></div>
+                        <div className="col bg-white border"><img className='w-100' src={books}/></div>
+                        <div className="col bg-white border"><img className='w-100' src={books}/></div>
+                        <div className="col bg-white border"><img className='w-100' src={books}/></div>
+                        <div className="col bg-white border"><img className='w-100' src={books}/></div>
+                        {/* <CountUp end={100} duration={5}></CountUp> */}
                     </div>
                 </div>
             </div>
