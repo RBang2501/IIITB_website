@@ -5,6 +5,8 @@ import Fade from '@mui/material/Fade';
 
 export const Megamenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [currSec1, setCurrSec1] = React.useState("Centers");
+
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -12,6 +14,31 @@ export const Megamenu = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const handleContentChange = (heading) => {
+    setCurrSec1(heading)
+  }
+
+  const Sec1Elements = []
+  const Sec2Elements = []
+  const Sec1Array = ["Centers", "Labs", "Outreach", "Publications", "Policy"]
+  const Sec2Contents = {
+    "Centers":  ["cen", "cen1", "cen2", "cen3"],
+    "Labs" :    ["lab", "lab1", "lab2", "lab3"],
+    "Outreach" :["out", "out1", "out2", "out3"],
+    "Publications" : ["pub", "pub1", "pub2", "pub3"],
+    "Policy" :    ["pol", "pol1", "pol2", "pol3"],
+  }
+
+  for(let heading of Sec1Array){
+    Sec1Elements.push(
+      <MenuItem onMouseOver={()=>{handleContentChange(heading)}}>{heading}</MenuItem>
+    )
+  }
+  for(let subHeading of Sec2Contents[currSec1])
+      Sec2Elements.push(
+        <MenuItem onClick={handleClose}>{subHeading}</MenuItem>
+      )
 
   return (
     <div className='m-3'>
@@ -57,21 +84,12 @@ export const Megamenu = () => {
       >
         <Stack direction='row'>
           <Stack direction='column'>
-            <MenuItem onClick={handleClose}>Centres</MenuItem>
-            <MenuItem onClick={handleClose}>Labs</MenuItem>
-            <MenuItem onClick={handleClose}>Outreach</MenuItem>
-            <MenuItem onClick={handleClose}>Publications</MenuItem>
-            <MenuItem onClick={handleClose}>Policy</MenuItem>
+            {Sec1Elements}
           </Stack>
 
           <Divider variant='middle'color='black' sx={{ borderRightWidth: 1 }}/>
           <Stack direction='column'>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            {Sec2Elements}
           </Stack>
         </Stack>
 
