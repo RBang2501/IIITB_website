@@ -39,9 +39,8 @@ export const App = () => {
         </div>
       ) : (
         <>
-          <Navbar />
-          <Navbar />
-          <Megamenu />
+          <NavigationBar />
+          {/* <Megamenu /> */}
           <EventCarousel />
           <NewsEvents />
           <SocialMediaEmbed />
@@ -52,61 +51,6 @@ export const App = () => {
     </div>
   );
 };
-
-
-
-
-
-function App() {
-
-  return (
-    <>
-      <NavigationBar />
-      {/* <Megamenu /> */}
-      <EventCarousel />
-      <NewsEvents />
-      <SocialMediaEmbed />
-      <Whyiiitb/>
-      
-      <Footer/>
-    </>
-  );
-
-
-
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar/>
-//       {/* <Megamenu/> */}
-//       {/* <EventCarousel/> */}
-//       <Footer/>
-//     </>
-//    );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-export default App;
 
 
 
