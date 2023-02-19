@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+.footer{
+    height: 60px;
+    width: 100%;
+    margin-top: 4px;
+}
+.footer__bg{
+    background-color: #212331;
+    padding: 20px 0 10px;
+}
+.footer__title{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.footer__socials{
+    justify-self: center;
+}
+.footer__social{
+    font-size: 1.5rem;
+    /* margin-right: var(--mb-1-5); */
+    text-align: center;
+}
+ .footer__social:hover{
+     color: white; 
+} 
+.footer__copy{
+    /* font-size: var(--smaller-font-size); */
+    text-align: center;
+    margin-top: 0.2rem;
+}
+.footer__title, 
+.footer__social{
+    color: var(--title-color);
+}
+
+
+.scroll__logo{
+    position: relative;
+    justify-content: right;
+    margin-left: 80%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    text-align: center;
+    margin-left: 96%;
+    margin-bottom: 15px;
+
+}
+.scroll__logo-text{
+    font-size: 1.125rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    line-height: 40px;
+}
+
+
+footer h6{
+    font-size: smaller ;
+}
+
+footer p{
+    font-size: xx-small;
+}
+
+footer a{
+    font-size: x-small;
+}
+

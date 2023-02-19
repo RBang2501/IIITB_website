@@ -7,6 +7,8 @@ import { Megamenu } from "./components/Megamenu";
 import { EventCarousel } from "./components/EventCarousel"
 import { NewsEvents } from "./components/NewsEvents"
 import { SocialMediaEmbed } from './components/SocialMediaEmbed';
+import { Footer } from "./components/Footer"
+import { Whyiiitb } from "./components/Whyiiitb"
 // import {Menubar} from "./components/Menubar"
 
 import Cookies from 'universal-cookie';
@@ -22,7 +24,9 @@ function App() {
       <EventCarousel />
       <NewsEvents />
       <SocialMediaEmbed />
-      {/* <Menubar/> */}
+      <Whyiiitb/>
+      
+      <Footer/>
     </>
   );
 
