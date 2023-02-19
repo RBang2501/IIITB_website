@@ -64,7 +64,7 @@ export const App = () => {
       : (
         <>
           <NavigationBar />
-          {/* <Megamenu /> */}
+          <Megamenu />
           <EventCarousel />
           <NewsEvents />
           <SocialMediaEmbed />
