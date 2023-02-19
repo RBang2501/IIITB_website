@@ -1,0 +1,14 @@
+.instaEmbed Header{
+    display: none !important;
+}
+.HoverCard,.Feedback,.SocialProof,.Caption,.Footer{
+    display: none !important;
+}
+
+.instaEmbed{
+    transform: translateY(-54px);
+}
+.insta-container{
+    height: 377px;
+    overflow: hidden !important;
+}
