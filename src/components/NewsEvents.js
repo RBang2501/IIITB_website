@@ -55,6 +55,7 @@ export const NewsEvents = () => {
           }}
         />
         <Carousel
+        className='pb-4'
           centerMode={true}
           responsive={responsive}
           autoPlay="true"
@@ -69,7 +70,7 @@ export const NewsEvents = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <div className="mx-3">
+          <div className="mx-3 shadow">
             <Card sx={{ maxWidth: 345 }}>
               <CardMedia
                 component="img"
@@ -83,10 +84,11 @@ export const NewsEvents = () => {
                   //   paddingTop: "0px !important",
                 }}
               >
-                <Typography gutterBottom variant="h6" component="div">
+               <Typography gutterBottom variant="h6" component="div" className="fw-bold" style={{lineHeight:'24px', fontSize:'17px', height:'70px', overflow:'hidden', fontFamily:'kanit'}}>
                   VLSI DESIGN CONTEST
                 </Typography>
-                <Typography variant="body2 " color="text.secondary">
+                {/* <hr className='pb-0 pt-0'/> */}
+                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
@@ -98,7 +100,7 @@ export const NewsEvents = () => {
               </CardActions>
             </Card>
           </div>
-          <div className="mx-3">
+          <div className="mx-3 shadow">
             <Card sx={{ maxWidth: 345 }}>
               <CardMedia
                 component="img"
@@ -107,10 +109,11 @@ export const NewsEvents = () => {
                 image="https://iiitb.ac.in/includefiles/newsevents/small/Award.jpg"
               />
               <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Lizard
+                <Typography gutterBottom variant="h6" component="div" className="fw-bold" style={{lineHeight:'24px', fontSize:'17px', height:'70px', overflow:'hidden', fontFamily:'kanit'}}>
+                  BTS Silver Jubilee Icon Award
                 </Typography>
-                <Typography variant="body2 " color="text.secondary">
+                {/* <hr className='pb-0 pt-0'/> */}
+                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
@@ -121,7 +124,7 @@ export const NewsEvents = () => {
               </CardActions>
             </Card>
           </div>
-          <div className="mx-3">
+          <div className="mx-3 shadow">
             <Card sx={{ maxWidth: 345 }}>
               <CardMedia
                 component="img"
@@ -130,10 +133,11 @@ export const NewsEvents = () => {
                 image="https://iiitb.ac.in/includefiles/newsevents/CPE.jpg"
               />
               <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Lizard
+                <Typography gutterBottom variant="h6" component="div" className="fw-bold" style={{lineHeight:'24px', fontSize:'17px', height:'70px', overflow:'hidden', fontFamily:'kanit'}}>
+                  Graduation ceremony of CPE
                 </Typography>
-                <Typography variant="body2 " color="text.secondary">
+                {/* <hr className='pb-0 pt-0'/> */}
+                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
@@ -144,7 +148,7 @@ export const NewsEvents = () => {
               </CardActions>
             </Card>
           </div>
-          <div className="mx-3">
+          <div className="mx-3 shadow">
             <Card sx={{ maxWidth: 345 }}>
               <CardMedia
                 component="img"
@@ -153,10 +157,11 @@ export const NewsEvents = () => {
                 image="https://iiitb.ac.in/includefiles/newsevents/CGI_resized.jpg"
               />
               <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Lizard
+                <Typography gutterBottom variant="h6" component="div" className="fw-bold" style={{lineHeight:'24px', fontSize:'17px', height:'70px', overflow:'hidden', fontFamily:'kanit'}}>
+                  CGI Scholarship for Top 20 girl students
                 </Typography>
-                <Typography variant="body2 " color="text.secondary">
+                {/* <hr className='pb-0 pt-0'/> */}
+                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
@@ -167,7 +172,7 @@ export const NewsEvents = () => {
               </CardActions>
             </Card>
           </div>
-          <div className="mx-3">
+          <div className="mx-3 shadow">
             <Card sx={{ maxWidth: 345 }}>
               <CardMedia
                 component="img"
@@ -176,10 +181,11 @@ export const NewsEvents = () => {
                 image="https://iiitb.ac.in/includefiles/newsevents/small/Prof__Ashish_(1).jpg"
               />
               <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Lizard
+                <Typography gutterBottom variant="h6" component="div" className="fw-bold" style={{lineHeight:'24px', fontSize:'17px', height:'70px', overflow:'hidden', fontFamily:'kanit'}}>
+                  Secure Multi-party Computation Against Passive Adv
                 </Typography>
-                <Typography variant="body2 " color="text.secondary">
+                {/* <hr className='pb-0 pt-0'/> */}
+                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
