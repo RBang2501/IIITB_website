@@ -11,6 +11,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import chitram_logo from "../assets/chitramlogo.png";
 
 
@@ -43,10 +44,10 @@ export const Gallery = () => {
       />
       <div className="pt-6 py-2 container " style={{ position: "relative" }}>
         <div className="row ">
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center" >
             <Card
               className="shawdow border border-1"
-              sx={{ width: "80%", height: "60%" }}
+              sx={{ width: "80%", height: "62%" }}
             >
               <CardContent>
                 <img
@@ -60,9 +61,9 @@ export const Gallery = () => {
                   color="text.secondary"
                   gutterBottom
                 >
-                  Chayachitra- Photography Club
+                  Chayachitra
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} variant="h5" component="div">
+                <Typography className="border-bottom border-2 "sx={{ mb: 1, width: "86%"}} variant="h5" component="div">
                   Photos-IIITB
                 </Typography>
                 {/* <Typography sx={{ mb: 1.5 }} color="text.secondary">
@@ -75,7 +76,7 @@ export const Gallery = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Gallery</Button>
+                <Button size="small mb-2.5">Gallery <KeyboardArrowRightIcon/></Button>
               </CardActions>
             </Card>
           </div>
