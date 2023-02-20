@@ -5,7 +5,23 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import ListSubheader from "@mui/material/ListSubheader";
 import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import chitram_logo from "../assets/chitramlogo.png";
 
+
+const bull = (
+  <Box
+    component="span"
+    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
+  >
+    •
+  </Box>
+);
 export const Gallery = () => {
   return (
     <div
@@ -25,72 +41,116 @@ export const Gallery = () => {
           fontSize: "20px",
         }}
       />
-      <div className="pt-6 py-2 d-flex justify-content-end" style={{position: "relative"}}>
-        <ImageList sx={{ width: 750, height: 550 }}>
-          <ImageListItem key="Subheader" cols={2}>
-            <ListSubheader component="div">December</ListSubheader>
-          </ImageListItem>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="lazy"
-              />
-              <ImageListItemBar
-                title={item.title}
-                subtitle={item.author}
-                actionIcon={
-                  <IconButton
-                    sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-                    aria-label={`info about ${item.title}`}
-                  >
-                    <InfoIcon />
-                  </IconButton>
-                }
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
+      <div className="pt-6 py-2 container " style={{ position: "relative" }}>
+        <div className="row ">
+          <div className="col d-flex justify-content-center">
+            <Card
+              className="shawdow border border-1"
+              sx={{ width: "80%", height: "60%" }}
+            >
+              <CardContent>
+                <img
+                  src={chitram_logo}
+                  height="100px"
+                  className="d-inline-block align-top"
+                  alt="React Bootstrap logo"
+                />
+                <Typography
+                  sx={{ fontSize: 14 }}
+                  color="text.secondary"
+                  gutterBottom
+                >
+                  Chayachitra- Photography Club
+                </Typography>
+                <Typography sx={{ mb: 1.5 }} variant="h5" component="div">
+                  Photos-IIITB
+                </Typography>
+                {/* <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                  adjective
+                </Typography> */}
+                <Typography variant="body2 katin">
+                  Let your words be few and pictures say more… Moments caught in
+                  the lens of students, faculty and staff- savoring campus life
+                  through their lens.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Gallery</Button>
+              </CardActions>
+            </Card>
+          </div>
+          <div className="col d-flex justify-content-center ">
+            <ImageList
+              sx={{
+                width: 800,
+                height: 550,
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+              }}
+            >
+              {itemData.map((item) => (
+                <ImageListItem key={item.img}>
+                  <img
+                    src={`${item.img}?w=248&fit=crop&auto=format`}
+                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                  <ImageListItemBar
+                    title={item.title}
+                    subtitle={item.author}
+                    actionIcon={
+                      <IconButton
+                        sx={{ color: "rgba(255, 255, 255, 0.54)" }}
+                        aria-label={`info about ${item.title}`}
+                      >
+                        <InfoIcon />
+                      </IconButton>
+                    }
+                  />
+                </ImageListItem>
+              ))}
+            </ImageList>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 const itemData = [
+  //   {
+  //     img: "https://iiitb.ac.in/includefiles/photos/Adrij_IMT2019004_(4).jpeg",
+  //     title: "Breakfast",
+  //     author: "@bkristastucchio",
+  //     rows: 2,
+  //     cols: 2,
+  //     featured: true,
+  //   },
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Breakfast",
-    author: "@bkristastucchio",
-    rows: 2,
-    cols: 2,
-    featured: true,
+    img: "https://iiitb.ac.in/includefiles/photos/Adrij_IMT2019004_(37).jpg",
+    title: "Lawn Area",
+    author: "@AdrijSharma",
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
-    author: "@rollelflex_graphy726",
+    img: "https://iiitb.ac.in/includefiles/photos/Adrij_IMT2019004_(29).jpg",
+    title: "Ramanujan Block",
+    author: "@AdrijSharma",
   },
   {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
-    author: "@helloimnik",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
-    title: "Coffee",
-    author: "@nolanissac",
-    cols: 2,
-  },
-  {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-    title: "Hats",
-    author: "@hjrc33",
+    img: "https://iiitb.ac.in/includefiles/photos/Heet_Vasani_iMTech_2020_(3).jpeg",
+    title: "Bhaskara Mens Hostel",
+    author: "@HeetVasani",
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
+    img: "https://iiitb.ac.in/includefiles/photos/Apoorva-Panse,-MT2020-(5).jpg",
+    title: "Vishveshvarya Mens Hostel",
+    author: "@Apporva Panse",
+    cols: 2,
+  },
+  {
+    img: "https://iiitb.ac.in/includefiles/photos/Apoorva-Panse,-MT2020-(6).jpg",
     title: "Honey",
     author: "@arwinneil",
     rows: 2,
@@ -98,36 +158,36 @@ const itemData = [
     featured: true,
   },
   {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
+    img: "https://iiitb.ac.in/includefiles/photos/Tejas_Kotha_(IMT2016.jpg",
     title: "Basketball",
     author: "@tjdragotta",
   },
   {
-    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
+    img: "https://iiitb.ac.in/includefiles/photos/Ishaan_Jalan_IMT2020561-4.jpg",
     title: "Fern",
     author: "@katie_wasserman",
   },
   {
-    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
+    img: "https://iiitb.ac.in/includefiles/photos/Ishaan_Jalan_IMT2020561-9.jpg",
     title: "Mushrooms",
     author: "@silverdalex",
     rows: 2,
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
+    img: "https://iiitb.ac.in/includefiles/photos/Heet_Vasani_iMTech_2020_(9).jpeg",
     title: "Tomato basil",
     author: "@shelleypauls",
   },
   {
-    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+    img: "https://iiitb.ac.in/includefiles/photos/PC__Jay_Kakkad_(MT2018_(4).jpg",
     title: "Sea star",
     author: "@peterlaster",
   },
-  {
-    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
-    title: "Bike",
-    author: "@southside_customs",
-    cols: 2,
-  },
+  //   {
+  //     img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
+  //     title: "Bike",
+  //     author: "@southside_customs",
+  //     cols: 2,
+  //   },
 ];
