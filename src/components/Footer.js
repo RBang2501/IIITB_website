@@ -13,9 +13,31 @@ import { bottom } from '@popperjs/core';
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 
 import white_logo from "../assets/IIITB-crop.png"
+import Backdrop from "@mui/material/Backdrop";
+import CircularProgress from "@mui/material/CircularProgress";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 
 export const Footer = () => {
+
+  const [open, setOpen] = React.useState(false);
+   const handleClick = () => {
+     setOpen(true);
+   };
+  // const handleClose = () => {
+  //   setOpen(false);
+  // };
+  const handleToggle = () => {
+    setOpen(!open);
+    setTimeout(() => {
+      setOpen(false);
+    }, 1000);
+  };
   return (
     <footer
       className="text-center text-lg-start text-muted"
@@ -184,14 +206,44 @@ export const Footer = () => {
                       color="primary"
                       size="small"
                       style={{
-                        width: "12vw",
+                        width: "15vw",
                         backgroundColor: "white",
                         fontSize: "xx-small",
                       }}
                     />
-                    <Button variant="contained" size="medium">
-                      Join
-                    </Button>
+                    {/* <div> */}
+                      <Button
+                        onClick={handleToggle}
+                        variant="contained"
+                        size="large"
+                      >
+                        Join
+                      </Button>
+                      <Backdrop
+                        sx={{
+                          color: "#fff",
+                          zIndex: (theme) => theme.zIndex.drawer + 1,
+                        }}
+                        open={open}
+                        // onClick={handleClose}
+                      >
+                        <CircularProgress color="inherit" />
+                      </Backdrop>
+
+                      <Snackbar
+                        open={open}
+                        autoHideDuration={3000}
+                        // onClose={handleClose}
+                      >
+                        <Alert
+                          // onClose={handleClose}
+                          severity="success"
+                          sx={{ width: "100%" }}
+                        >
+                          Registered Successfully!
+                        </Alert>
+                      </Snackbar>
+                    {/* </div> */}
                   </div>
                 </div>
                 <h6 className=" fw-bold mb-3 border-bottom border-secondary border-1 py-2">
@@ -205,7 +257,7 @@ export const Footer = () => {
         </div>
       </section>
 
-      <div className="text-center p-4" style={{ background: "black" }}>
+      <div className="text-center p-3" style={{ background: "black" }}>
         © 2023 IIIT Bangalore. All Rights Reserved
       </div>
     </footer>
