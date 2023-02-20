@@ -47,7 +47,7 @@ export const Gallery = () => {
           <div className="col d-flex justify-content-center my-auto" >
             <Card
               className="shadow"
-              // sx={{ width: "80%" }}
+              sx={{ width: "80%"}}
             >
               <CardContent>
                 <img

@@ -28,6 +28,7 @@ export const NavigationBar = () => {
   };
   const handleClose = () => {
     setAnchorEl(null);
+    setCurrMain("");
   };
 
   const handleContentChange = (heading) => {
@@ -45,6 +46,7 @@ export const NavigationBar = () => {
   const Sec2Elements = []
   const MainNav = ["Research", "Academics", "Campus Life", "Media", "People", "About Us"]
   const Sec1Array = {
+    "" : [],
     "Research" : ["Centers", "Labs", "Outreach", "Publications", "Policy"],
     "Academics": ["Domains" ,"Programmes", "Admissions","Placements","Exchange Program","Verification Process","Curriculum","Programme Outcomes","Academic Calendar","Online Education","Continuing Professional Education"],
     "Campus Life":[],
@@ -70,9 +72,9 @@ export const NavigationBar = () => {
   for(let mainHead of MainNav){
     let bgcolor = "white";
     if(currMain == mainHead)
-      bgcolor = "#f4f5fb"
+      bgcolor = "grey"
     MainElements.push(
-      <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block', background: bgcolor }} href="#action1" onMouseOver={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
+      <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block', background: bgcolor }} href="#action1" onClick={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
     )
   }
 
@@ -94,7 +96,7 @@ export const NavigationBar = () => {
 
   return (
     <>
-      <Navbar className='mb-0 shadow pt-3 pb-2' bg="light" expand="lg">
+      <Navbar className='mb-0 shadow pt-3 pb-2'>
         <Container fluid style={{ width: '96%' }}>
           <Navbar.Brand href="#">
             <img
