@@ -1,9 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
-import college_logo from "./assets/college_logo.jpg";
+import college_logo from "./assets/iiitb_logo.png";
 import Box from "@mui/material/Box";
 
+import {Gallery} from "./components/Gallery"
 import { NavigationBar } from "./components/NavigationBar";
 import { Megamenu } from "./components/Megamenu";
 import { EventCarousel} from "./components/EventCarousel"
@@ -25,7 +26,7 @@ export const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (
@@ -71,6 +72,7 @@ export const App = () => {
           <NewsEvents />
           <Whyiiitb />
           <SocialMediaEmbed />
+          <Gallery/> 
           <AlumniReview/>
           <Footer />
         </>
