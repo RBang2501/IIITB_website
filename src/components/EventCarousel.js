@@ -9,7 +9,7 @@ import img5 from '../assets/images/5.jpeg';
 
 export const EventCarousel = () => {
     return (
-        <div className='mx-auto rounded shadow-lg border mt-3 bg-dark' style={{width:'96%', height:'80vh'}} >
+        <div className='mx-auto rounded shadow-lg border mt-3 bg-dark' style={{width:'96%'}} >
             <Carousel pause='false' fade className='event-carousel mx-0 px-0 rounded'>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
@@ -18,9 +18,11 @@ export const EventCarousel = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className='event-carousel-caption'>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        <button className='btn btn-light'>Know More</button>
+                        <h3 className='fw-bold mb-4'>Being in Oblivion</h3>
+                        <h5 className='mb-4' style={{height:'70px', overflow:'hidden'}}>
+                            Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                        </h5>
+                        <button className=' mt-2 btn btn-light'>Know More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
@@ -30,9 +32,11 @@ export const EventCarousel = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption className='event-carousel-caption'>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button className='btn btn-light'>Know More</button>
+                        <h3 className='fw-bold mb-4'>Being in Oblivion</h3>
+                        <h5 className='mb-4' style={{height:'70px', overflow:'hidden'}}>
+                            Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                        </h5>
+                        <button className=' mt-2 btn btn-light'>Know More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
@@ -42,11 +46,11 @@ export const EventCarousel = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='event-carousel-caption'>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                        <button className='btn btn-light'>Know More</button>
+                        <h3 className='fw-bold mb-4'>Being in Oblivion</h3>
+                        <h5 className='mb-4' style={{height:'70px', overflow:'hidden'}}>
+                            Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                        </h5>
+                        <button className=' mt-2 btn btn-light'>Know More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
@@ -56,11 +60,11 @@ export const EventCarousel = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='event-carousel-caption'>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                        <button className='btn btn-light'>Know More</button>
+                        <h3 className='fw-bold mb-4'>Being in Oblivion</h3>
+                        <h5 className='mb-4' style={{height:'70px', overflow:'hidden'}}>
+                            Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                        </h5>
+                        <button className=' mt-2 btn btn-light'>Know More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
@@ -70,11 +74,11 @@ export const EventCarousel = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption className='event-carousel-caption'>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                        <button className='btn btn-light'>Know More</button>
+                        <h3 className='fw-bold mb-4'>Being in Oblivion</h3>
+                        <h5 className='mb-4' style={{height:'70px', overflow:'hidden'}}>
+                            Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                        </h5>
+                        <button className=' mt-2 btn btn-light'>Know More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
