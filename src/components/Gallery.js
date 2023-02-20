@@ -44,7 +44,7 @@ export const Gallery = () => {
       />
       <div className="pt-6 container " style={{ position: "relative" }}>
         <div className="row ">
-          <div className="col d-flex justify-content-center" >
+          <div className="col d-flex justify-content-center my-auto" >
             <Card
               className="shadow"
               // sx={{ width: "80%" }}
@@ -80,7 +80,7 @@ export const Gallery = () => {
               </CardActions>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center ">
+          <div className="col d-flex justify-content-center border-start border-1 ">
             <ImageList
               sx={{
                 width: 800,

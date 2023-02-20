@@ -37,143 +37,160 @@ const responsive = {
 
 export const NewsEvents = () => {
     return (
-        <div className='bg-white shadow pt-3 my-3 mt-5 rounded mx-auto' style={{width:'96%'}}>
-            <h3 className='text-center fw-bold'>News & Events</h3>
-            <h6 className='text-center text-secondary'>All that's new and happening at IIITB</h6>
-            <hr className='mx-5' style={{ color: 'grey', fontWeight: '700', height: '10px', fontSize: '20px' }} />
-            <Carousel 
-                // centerMode={true} 
-                partialVisible={true}
-                responsive={responsive}
-                autoPlay="true"
-                infinite="true"
-                partialVisbile={true}
-                // autoPlaySpeed={1000}
-                // keyBoardControl={true}
-                // customTransition="all .5"
-                // transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                // deviceType={this.props.deviceType}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-            >
-                <div className='mx-3'>
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="140"
-                            image={img1}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Lizard
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
-                    </Card>
-                </div>
-                <div className='mx-3'>
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="140"
-                            image={img5}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Lizard
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
-                    </Card>
-                </div>
-                <div className='mx-3'>
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="140"
-                            image={img2}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Lizard
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
-                    </Card>
-                </div>
-                <div className='mx-3'>
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="140"
-                            image={img3}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Lizard
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
-                    </Card>
-                </div>
-                <div className='mx-3'>
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="140"
-                            image={img4}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Lizard
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                species, ranging across all continents except Antarctica
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
-                    </Card>
-                </div>
-            </Carousel>
-        </div>
+      <div
+        className="bg-white shadow pt-3 my-3 mt-5 rounded mx-auto"
+        style={{ width: "96%" }}
+      >
+        <h3 className="text-center fw-bold">News & Events</h3>
+        <h6 className="text-center text-secondary">
+          All that's new and happening at IIITB
+        </h6>
+        <hr
+          className="mx-5"
+          style={{
+            color: "grey",
+            fontWeight: "700",
+            height: "10px",
+            fontSize: "20px",
+          }}
+        />
+        <Carousel
+          centerMode={true}
+          responsive={responsive}
+          autoPlay="true"
+          infinite="true"
+          // autoPlaySpeed={1000}
+          // keyBoardControl={true}
+          // customTransition="all .5"
+          // transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          // deviceType={this.props.deviceType}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div className="mx-3">
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                component="img"
+                alt="green iguana"
+                height="140"
+                image="https://iiitb.ac.in/includefiles/newsevents/small/MTech_students_won_VLSI_design_contest_at_VLSI_Design_Conference_2023_Hyderabad.jpeg"
+              />
+              <CardContent
+                style={{
+                  marginBottom: "2px !important",
+                  //   paddingTop: "0px !important",
+                }}
+              >
+                <Typography gutterBottom variant="h6" component="div">
+                  VLSI DESIGN CONTEST
+                </Typography>
+                <Typography variant="body2 " color="text.secondary">
+                  Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
+                  Krishna Reddy Sanampudi, Ravi Kiran Reddy..
+                </Typography>
+              </CardContent>
+
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          </div>
+          <div className="mx-3">
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                component="img"
+                alt="green iguana"
+                height="140"
+                image="https://iiitb.ac.in/includefiles/newsevents/small/Award.jpg"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h6" component="div">
+                  Lizard
+                </Typography>
+                <Typography variant="body2 " color="text.secondary">
+                  Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
+                  Krishna Reddy Sanampudi, Ravi Kiran Reddy..
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          </div>
+          <div className="mx-3">
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                component="img"
+                alt="green iguana"
+                height="140"
+                image="https://iiitb.ac.in/includefiles/newsevents/CPE.jpg"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h6" component="div">
+                  Lizard
+                </Typography>
+                <Typography variant="body2 " color="text.secondary">
+                  Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
+                  Krishna Reddy Sanampudi, Ravi Kiran Reddy..
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          </div>
+          <div className="mx-3">
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                component="img"
+                alt="green iguana"
+                height="140"
+                image="https://iiitb.ac.in/includefiles/newsevents/CGI_resized.jpg"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h6" component="div">
+                  Lizard
+                </Typography>
+                <Typography variant="body2 " color="text.secondary">
+                  Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
+                  Krishna Reddy Sanampudi, Ravi Kiran Reddy..
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          </div>
+          <div className="mx-3">
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                component="img"
+                alt="green iguana"
+                height="140"
+                image="https://iiitb.ac.in/includefiles/newsevents/small/Prof__Ashish_(1).jpg"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h6" component="div">
+                  Lizard
+                </Typography>
+                <Typography variant="body2 " color="text.secondary">
+                  Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
+                  Krishna Reddy Sanampudi, Ravi Kiran Reddy..
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          </div>
+        </Carousel>
+      </div>
     );
 }
