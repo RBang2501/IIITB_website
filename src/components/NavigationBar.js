@@ -47,6 +47,10 @@ export const NavigationBar = () => {
   const Sec1Array = {
     "Research" : ["Centers", "Labs", "Outreach", "Publications", "Policy"],
     "Academics": ["Domains" ,"Programmes", "Admissions","Placements","Exchange Program","Verification Process","Curriculum","Programme Outcomes","Academic Calendar","Online Education","Continuing Professional Education"],
+    "Campus Life":[],
+    "Media":[],
+    "People":[],
+    "About Us":[],
     // "Campus Life" : ["Committees & Clubs", "Students Events and Festivals","Cafeteria","Library Collection"],
     // "Media" : ["Faculty Articles", "IIITB in the Press","Naviiina","Annual Reports","Press Releases","Media Kit"],
     // "People": ["Faculty", "Staff","Ph.D. Scholars","Alumni","Code Of Conduct"],
@@ -64,17 +68,20 @@ export const NavigationBar = () => {
   }
 
   for(let mainHead of MainNav){
+    let bgcolor = "#f4f5fb";
+    if(currMain == mainHead)
+      bgcolor = "white"
     MainElements.push(
-      <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action1" onMouseOver={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
+      <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block', background: bgcolor }} href="#action1" onMouseOver={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
     )
   }
 
   if(currMain){
     console.log("curr", Sec1Array[currMain])
     for (let heading of Sec1Array[currMain]) {
-      let bgcolor = "white";
+      let bgcolor = "#f4f5fb";
       if(currSec1 == heading)
-        bgcolor = "grey"
+        bgcolor = "white"
       Sec1Elements.push(
         <MenuItem className='border-bottom border-2 pb-3' style={{ fontFamily: 'kanit', background: bgcolor}} onMouseOver={() => { handleContentChange(heading);}}>{heading}</MenuItem>
       )
@@ -137,14 +144,21 @@ export const NavigationBar = () => {
                 TransitionComponent={Fade}
               >
                 <Stack style={{backgroundColor:'#f4f5fb'}} direction='row'>
+                  {}
                   <Stack className='ps-3' style={{width: '200px' }} direction='column'>
                     {Sec1Elements}
                   </Stack>
 
-                  <Divider variant='middle' color='grey' sx={{ borderRightWidth: 1 }} />
-                  <Stack style={{width: '400px' }} direction='column'>
-                    {Sec2Elements}
-                  </Stack>
+                  {Sec2Contents[currSec1].length == 0 ? 
+                  <></>
+                  :
+                  <>
+                    <Divider variant='middle' color='grey' sx={{ borderRightWidth: 1 }} />
+                    <Stack style={{width: '400px' }} direction='column'>
+                      {Sec2Elements}
+                    </Stack>
+                  </>
+                  }
 
                   <Divider variant='middle' color='grey' sx={{ borderRightWidth: 1 }} />
 
