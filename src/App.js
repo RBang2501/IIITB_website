@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import college_logo from "./assets/college_logo.jpg";
