@@ -5,7 +5,7 @@ import { fadeIn } from 'react-animations'
 import img1 from "../assets/images/iiitb.png"
 import campus from "../assets/images/campus.jpeg"
 
-import { green, pink, blue } from '@mui/material/colors';
+import { green, pink, blue,yellow } from '@mui/material/colors';
 import Avatar from '@mui/material/Avatar';
 import PageviewIcon from '@mui/icons-material/Pageview';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
@@ -45,9 +45,9 @@ window.addEventListener("scroll", reveal);
 
 export const Whyiiitb = () => {
     return (
-        <div className="card text-bg-dark rounded-0" style={{height:'400px', overflow:'hidden'}} id="why-card">
+        <div className="card text-bg-dark rounded-0" style={{height:'450px', overflow:'hidden'}} id="why-card">
             <img src={campus} className="card-img" style={{ filter: 'brightness(18%)'}} alt="..." />
-            <div className="card-img-overlay">
+            <div className="card-img-overlay pt-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-6 unwrap py-3" id="whylist">
@@ -79,7 +79,7 @@ export const Whyiiitb = () => {
                         </div>
                         <div className="col-6 row">
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <MenuBookIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <MenuBookIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={554} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>iMTech</h6>
@@ -87,7 +87,7 @@ export const Whyiiitb = () => {
                             </div>
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <LaptopChromebookIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <LaptopChromebookIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={358} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>MTech</h6>
@@ -95,7 +95,7 @@ export const Whyiiitb = () => {
                             </div>
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <RocketLaunchIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <RocketLaunchIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={50} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Startups</h6>
@@ -103,7 +103,7 @@ export const Whyiiitb = () => {
                             </div>
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <HailIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <HailIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={61} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Faculty</h6>
@@ -111,7 +111,7 @@ export const Whyiiitb = () => {
                             </div>
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <BiotechIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <BiotechIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={178} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Research Scholars</h6>
@@ -119,7 +119,7 @@ export const Whyiiitb = () => {
                             </div>
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <SchoolIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <SchoolIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={3500} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Alumni</h6>
@@ -127,7 +127,7 @@ export const Whyiiitb = () => {
                             </div>
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <AutoStoriesIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <AutoStoriesIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={1200} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Publications</h6>
@@ -135,7 +135,7 @@ export const Whyiiitb = () => {
                             </div>
 
                             <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <AccountBalanceIcon className="my-auto" sx={{ fontSize: 60, color: blue[200] }} />
+                                <AccountBalanceIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
                                     <CountUp enableScrollSpy end={617362.8} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>sq ft of Space</h6>

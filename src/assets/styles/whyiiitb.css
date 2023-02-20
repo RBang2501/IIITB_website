@@ -55,3 +55,24 @@
     transition-duration: 0.5s;
     transition-delay: 2.5s;
 }
+
+/* .review-card{
+    background: linear-gradient(
+    to top,
+    rgb(10, 25, 41) 0%,
+    rgb(6, 82, 154) 30%,
+    white 60%,
+    white 100%
+  );
+} */
+
+.review-card{
+    /* border-color: rgb(6, 82, 154) !important; */
+    background: linear-gradient(
+    to top,
+    rgb(6, 82, 154) 0%,
+    rgb(6, 82, 154) 40%,
+    white 40%,
+    white 100%
+  );
+}

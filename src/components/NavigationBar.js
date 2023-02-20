@@ -46,29 +46,21 @@ export const NavigationBar = () => {
   const MainNav = ["Research", "Academics", "Campus Life", "Media", "People", "About Us"]
   const Sec1Array = {
     "Research" : ["Centers", "Labs", "Outreach", "Publications", "Policy"],
-    "Academics": ["Domains" ,"Programms"],
-    "Campus Life" : ["Events", "Cafeteria"],
-    "Media" : ["Media Kit", "Naviina"],
-    "People": ["Faculty", "Staff"],
-    "About Us": ["Partnership", "Explore"],
+    "Academics": ["Domains" ,"Programmes", "Admissions","Placements","Exchange Program","Verification Process","Curriculum","Programme Outcomes","Academic Calendar","Online Education","Continuing Professional Education"],
+    // "Campus Life" : ["Committees & Clubs", "Students Events and Festivals","Cafeteria","Library Collection"],
+    // "Media" : ["Faculty Articles", "IIITB in the Press","Naviiina","Annual Reports","Press Releases","Media Kit"],
+    // "People": ["Faculty", "Staff","Ph.D. Scholars","Alumni","Code Of Conduct"],
+    // "About Us": ["Explore IIITB", "Governing Body","Administration","Industry Advisory Board","Institute Industry Interaction Cell","Partnership","AICTE Mandatory Disclosure","IIITB Calendar"],
   }
   const Sec2Contents = {
     "": [],
-    "Centers": ["cen", "cen1", "cen2", "cen3"],
-    "Labs": ["lab", "lab1", "lab2", "lab3"],
-    "Outreach": ["out", "out1", "out2", "out3"],
-    "Publications": ["pub", "pub1", "pub2", "pub3"],
-    "Policy": ["pol", "pol1", "pol2", "pol3"],
+    "Centers": ["E-Health Research Centre (EHRC)", "Machine Intelligence & Robotics CoE (MINRO)", "Centre for IT & Public Policy (CITAPP)", "Cognitive Computing CoE(CCC)", "COMET Tech Innovation Hub (NM-ICPS)", "IIITB Innovation Centre", "Modular Open-Source Identity Platform (MOSIP)"],
+    "Labs": ["Surgical and Assistive Robotics Lab", "Graphics-Visualization-Computing-Lab", "Web Sciene Lab", "Multimodal Perception Lab","Software Engineering Lab","High Density Electronics Systems Lab", "Networking and Communication Lab", "Indian Knowledge System Lab", "Smart City Lab","Ascend Studio","Radar Sensing Lab"],
+    "Outreach": ["Samvad", "RISE", "IMACX Open Innovation Platform (IMACX)"],
+    "Publications": [],
+    "Policy": [],
     "Domains": ["dom1", "dom2", "dom3"],
     "Programms": ["pr1", "pr2"],
-    "Events":[],
-    "Cafeteria":[],
-    "Media Kit": [],
-    "Naviina": [],
-    "Faculty": [],
-    "Staff": [],
-    "Partnership": [],
-    "Explore": [],
   }
 
   for(let mainHead of MainNav){
@@ -84,12 +76,12 @@ export const NavigationBar = () => {
       if(currSec1 == heading)
         bgcolor = "grey"
       Sec1Elements.push(
-        <MenuItem style={{ fontFamily: 'kanit', background: bgcolor}} onMouseOver={() => { handleContentChange(heading);}}>{heading}</MenuItem>
+        <MenuItem className='border-bottom border-2 pb-3' style={{ fontFamily: 'kanit', background: bgcolor}} onMouseOver={() => { handleContentChange(heading);}}>{heading}</MenuItem>
       )
     }
     for (let subHeading of Sec2Contents[currSec1])
       Sec2Elements.push(
-        <MenuItem style={{ fontFamily: 'kanit', }} onClick={handleClose}>{subHeading}</MenuItem>
+        <MenuItem className='border-bottom border-2 pb-3' style={{ fontFamily: 'kanit', }} onClick={handleClose}>{subHeading}</MenuItem>
       )
   }
 
@@ -133,6 +125,8 @@ export const NavigationBar = () => {
 
               </div>
               <Menu
+                // style={{backgroundColor:'#f4f5fb'}}
+                className='mt-2'
                 id="fade-menu"
                 MenuListProps={{
                   'aria-labelledby': 'fade-button',
@@ -142,23 +136,23 @@ export const NavigationBar = () => {
                 onClose={handleClose}
                 TransitionComponent={Fade}
               >
-                <Stack direction='row'>
-                  <Stack style={{width: '150px' }} direction='column'>
+                <Stack style={{backgroundColor:'#f4f5fb'}} direction='row'>
+                  <Stack className='ps-3' style={{width: '200px' }} direction='column'>
                     {Sec1Elements}
                   </Stack>
 
                   <Divider variant='middle' color='grey' sx={{ borderRightWidth: 1 }} />
-                  <Stack style={{width: '150px' }} direction='column'>
+                  <Stack style={{width: '400px' }} direction='column'>
                     {Sec2Elements}
                   </Stack>
 
                   <Divider variant='middle' color='grey' sx={{ borderRightWidth: 1 }} />
 
-                  <div className='py-2 pe-2' style={{width:'200px', fontFamily:'kanit'}}>
-                    <h6>Featured Posts</h6>
-                    <hr className='text-secondary'/>
-                    <img width={180} src={jublee}/>
-                    <p className='mt-2'>Lorem ipsum dolor sit amet, consectetur</p>
+                  <div className='py-2 pe-2' style={{width:'280px', fontFamily:'kanit'}}>
+                    <h6 className='mb-0' style={{textTransform:'uppercase'}}>Featured Posts</h6>
+                    <hr className='text-black pb-2 mt-2 pt-0'/>
+                    <img className='shadow-lg border border-1 ' width={270} src="https://pbs.twimg.com/media/FpKViz1aQAEh_ZT?format=jpg&name=medium"/>
+                    <p className='mt-2' style={{height:'50px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap'}}>Our students, Kautuk Raj (IMT2019043) and Adrij Sharma (IMT2019004) participated in an international youth summit called Technology for Peace organized in Dumaguete, Philippines as a part of an ongoing European Union project.</p>
                   </div>
 
                 </Stack>
