@@ -40,9 +40,13 @@ export const NewsEvents = () => {
             <h3 className='text-center fw-bold'>News & Events</h3>
             <h6 className='text-center text-secondary'>All that's new and happening at IIITB</h6>
             <hr className='mx-5' style={{ color: 'grey', fontWeight: '700', height: '10px', fontSize: '20px' }} />
-            <Carousel centerMode={true} responsive={responsive}
+            <Carousel 
+                // centerMode={true} 
+                partialVisible={true}
+                responsive={responsive}
                 autoPlay="true"
                 infinite="true"
+                partialVisbile={true}
                 // autoPlaySpeed={1000}
                 // keyBoardControl={true}
                 // customTransition="all .5"
