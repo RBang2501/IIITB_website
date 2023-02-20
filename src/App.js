@@ -67,8 +67,8 @@ export const App = () => {
           {/* <Megamenu /> */}
           <EventCarousel />
           <NewsEvents />
-          <SocialMediaEmbed />
           <Whyiiitb />
+          <SocialMediaEmbed />
           <Footer />
         </>
       )}

@@ -37,7 +37,8 @@ const responsive = {
 export const NewsEvents = () => {
     return (
         <div className='bg-white shadow pt-3 my-3 mt-5 rounded mx-auto' style={{width:'96%'}}>
-            <h6 className='text-center'>Recent blogs</h6>
+            <h3 className='text-center fw-bold'>News & Events</h3>
+            <h6 className='text-center text-secondary'>All that's new and happening at IIITB</h6>
             <hr className='mx-5' style={{ color: 'grey', fontWeight: '700', height: '10px', fontSize: '20px' }} />
             <Carousel centerMode={true} responsive={responsive}
                 autoPlay="true"

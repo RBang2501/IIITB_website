@@ -15,13 +15,13 @@
 } */
 
 .event-carousel-caption{
-    transform: translate(0px, -150px) !important;
+    /* transform: translate(0px, -150px) !important; */
     opacity: 0;
 }
 
 .active .event-carousel-caption{
     opacity: 1;
-    transform: translate(0px, -200px) !important;
+    transform: translate(0px, -150px) !important;
     /* color: white; */
     font-size: 12px;
     transition-property: transform, opacity !important;

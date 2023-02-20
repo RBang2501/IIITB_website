@@ -9,12 +9,12 @@ import img5 from '../assets/images/5.jpeg';
 
 export const EventCarousel = () => {
     return (
-        <div className='mx-auto rounded shadow-lg pt-5 border mt-3' style={{width:'96%', height:'80vh'}} >
+        <div className='mx-auto rounded shadow-lg border mt-3 bg-dark' style={{width:'96%', height:'80vh'}} >
             <Carousel pause='false' fade className='event-carousel mx-0 px-0 rounded'>
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
                         className="d-block w-100 event-carousel-img"
-                        src={img3}
+                        src="https://iiitb.ac.in/includefiles/banners/jubileee.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption className='event-carousel-caption'>
@@ -26,7 +26,7 @@ export const EventCarousel = () => {
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
                         className="d-block w-100 event-carousel-img"
-                        src={img1}
+                        src="https://iiitb.ac.in/includefiles/banners/website_banner7.jpg"
                         alt="Second slide"
                     />
                     <Carousel.Caption className='event-carousel-caption'>
@@ -38,7 +38,35 @@ export const EventCarousel = () => {
                 <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
                     <img
                         className="d-block w-100 event-carousel-img"
-                        src={img2}
+                        src="https://iiitb.ac.in/includefiles/banners/pic.jpg"
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption className='event-carousel-caption'>
+                        <h3>Third slide label</h3>
+                        <p>
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        </p>
+                        <button className='btn btn-light'>Know More</button>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
+                    <img
+                        className="d-block w-100 event-carousel-img"
+                        src="https://iiitb.ac.in/includefiles/banners/Website_banner.jpg"
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption className='event-carousel-caption'>
+                        <h3>Third slide label</h3>
+                        <p>
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        </p>
+                        <button className='btn btn-light'>Know More</button>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={5000} className='event-carousel-item' style={{height:'70vh'}}>
+                    <img
+                        className="d-block w-100 event-carousel-img"
+                        src="https://iiitb.ac.in/includefiles/banners/iiitb-bangalore3.jpg"
                         alt="Third slide"
                     />
                     <Carousel.Caption className='event-carousel-caption'>
