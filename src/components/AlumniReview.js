@@ -14,6 +14,7 @@ import rakshit from "../assets/images/Team/rakshit.jpeg"
 import anurag from "../assets/images/Team/Anurag.jpeg"
 
 import { Avatar } from '@mui/material';
+import { FormatQuote } from '@mui/icons-material';
 
 
 export const AlumniReview = () => {
@@ -41,7 +42,8 @@ export const AlumniReview = () => {
                 <h6 className="text-center text-secondary">All that's new and happening at IIITB</h6>
                 <Carousel
                     className='pb-5'
-                    centerMode={true}
+                    partialVisbile={true}
+                    // centerMode={true}
                     swipeable={false}
                     draggable={false}
                     showDots={false}
@@ -59,26 +61,30 @@ export const AlumniReview = () => {
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                 >
-                    <div className='review-card shadow-lg mx-3 p-4 text-center rounded border border-3' style={{ height: '400px', width: '300px' }}>
-                        <p style={{ height: '120px', overflow: 'hidden' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis, urna ut tristique accumsan, velit eros blandit est, Mauris sodales ullamcorper eros nec cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div className='review-card shadow-lg mx-3 p-4 text-center rounded border border-3' style={{ height: '400px', width: '400px' }}>
+                        <FormatQuote style={{ color: 'rgb(6, 82, 154)', position: 'absolute', transform: 'translate(-180px,-30px) scale(-1,1)', fontSize: '50px' }} />
+                        <p className="py-4 px-3" style={{ height: '120px', overflow: 'hidden' }}>I have been working in the field of Marketing since I graduated from IndSearch Business School from year 2007. At the time I was hired, the companies were mostly looking for graduates who have real practical knowledge with marketing skills.</p>
                         <Avatar className='border border-3 mx-auto' src={rahul} sx={{ width: 150, height: 150 }} />
                         <h5 className='text-white fw-bold mt-3 mb-1'>Rahul Jain</h5>
                         <h6 style={{ color: 'rgb(196 226 255)' }}>Tower Research Intern</h6>
                     </div>
-                    <div className='review-card shadow-lg mx-3 p-4 text-center rounded border border-3' style={{ height: '400px', width: '300px' }}>
-                        <p style={{ height: '120px', overflow: 'hidden' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis, urna ut tristique accumsan, velit eros blandit est, Mauris sodales ullamcorper eros nec cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div className='review-card shadow-lg mx-3 p-4 text-center rounded border border-3' style={{ height: '400px', width: '400px' }}>
+                        <FormatQuote style={{ color: 'rgb(6, 82, 154)', position: 'absolute', transform: 'translate(-180px,-30px) scale(-1,1)', fontSize: '50px' }} />
+                        <p className="py-4 px-3" style={{ height: '120px', overflow: 'hidden' }}>I have been working in the field of Marketing since I graduated from IndSearch Business School from year 2007. At the time I was hired, the companies were mostly looking for graduates who have real practical knowledge with marketing skills.</p>
                         <Avatar className='border border-3 mx-auto' src={rakshit} sx={{ width: 150, height: 150 }} />
                         <h5 className='text-white fw-bold mt-3 mb-1'>Rakshit Bang</h5>
                         <h6 style={{ color: 'rgb(196 226 255)' }}>Microsoft Senior Lead</h6>
                     </div>
-                    <div className='review-card shadow-lg mx-3 p-4 text-center rounded border border-3' style={{ height: '400px', width: '300px' }}>
-                        <p style={{ height: '120px', overflow: 'hidden' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis, urna ut tristique accumsan, velit eros blandit est, Mauris sodales ullamcorper eros nec cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div className='review-card shadow-lg mx-3 p-4 text-center rounded border border-3' style={{ height: '400px', width: '400px' }}>
+                        <FormatQuote style={{ color: 'rgb(6, 82, 154)', position: 'absolute', transform: 'translate(-180px,-30px) scale(-1,1)', fontSize: '50px' }} />
+                        <p className="py-4 px-3" style={{ height: '120px', overflow: 'hidden' }}>I have been working in the field of Marketing since I graduated from IndSearch Business School from year 2007. At the time I was hired, the companies were mostly looking for graduates who have real practical knowledge with marketing skills.</p>
                         <Avatar className='border border-3 mx-auto' src={anurag} sx={{ width: 150, height: 150 }} />
                         <h5 className='text-white fw-bold mt-3 mb-1'>Anurag Singh Naruka</h5>
                         <h6 style={{ color: 'rgb(196 226 255)' }}>Google Lead Engineer</h6>
                     </div>
-                    <div className='review-card shadow-lg mx-3 p-4 text-center rounded border border-3' style={{ height: '400px', width: '300px' }}>
-                        <p style={{ height: '120px', overflow: 'hidden' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis, urna ut tristique accumsan, velit eros blandit est, Mauris sodales ullamcorper eros nec cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div className='review-card shadow-lg mx-3 p-4 text-center rounded border border-3' style={{ height: '400px', width: '400px' }}>
+                        <FormatQuote style={{ color: 'rgb(6, 82, 154)', position: 'absolute', transform: 'translate(-180px,-30px) scale(-1,1)', fontSize: '50px' }} />
+                        <p className="py-4 px-3" style={{ height: '120px', overflow: 'hidden' }}>I have been working in the field of Marketing since I graduated from IndSearch Business School from year 2007. At the time I was hired, the companies were mostly looking for graduates who have real practical knowledge with marketing skills.</p>
                         <Avatar className='border border-3 mx-auto' src={arya} sx={{ width: 150, height: 150 }} />
                         <h5 className='text-white fw-bold mt-3 mb-1'>Aditya</h5>
                         <h6 style={{ color: 'rgb(196 226 255)' }}>Amazon HR Department</h6>

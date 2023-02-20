@@ -71,28 +71,28 @@ export const Footer = () => {
         <div className="container text-center text-md-start pt-3">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-1 border-end border-secondary border-1">
-              <div className="">
+              <div className="ps-4">
                 <img
                   src={white_logo}
                   className="pt-0 mt-0 "
                   style={{ width: "120px" }}
                 />
               </div>
-              <div className="">
+              <div className="ps-4">
                 <h6
                   className="mb-4"
-                  style={{ fontSize: "20px", fontFamily: "kanit" }}
+                  style={{ fontSize: "15px", fontFamily: "ibmPlexMono" }}
                 >
-                  <i className="fas fa-gem kanit"></i>International Institute of
+                  <i className="fas fa-gem"></i>International Institute of
                   Information Techonology, Bangalore
                 </h6>
               </div>
 
               {/* <h6 className=" fw-bold mb-1">Address:</h6> */}
-              <p>
+              <p style={{fontSize:'12px'}}>
                 <LocalPhoneIcon /> +91-804-1407777
               </p>
-              <p className="d-flex">
+              <p style={{fontSize:'12px'}} className="d-flex">
                 <MyLocationIcon />
                 <span className="px-2">
                   {" "}
@@ -108,37 +108,37 @@ export const Footer = () => {
               </h6>
 
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="text-reset text-decoration-none">
                   <ChevronRightIcon />
                   Careers
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="text-reset text-decoration-none">
                   <ChevronRightIcon />
                   Tenders
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="text-reset text-decoration-none">
                   <ChevronRightIcon />
                   Donate/Contribute
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="text-reset text-decoration-none">
                   <ChevronRightIcon />
                   My-IIITB
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="text-reset text-decoration-none">
                   <ChevronRightIcon />
                   Site-Map
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="text-reset text-decoration-none">
                   <ChevronRightIcon />
                   ICC
                 </a>
@@ -151,37 +151,37 @@ export const Footer = () => {
               </h6>
 
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="d-flex text-reset text-decoration-none">
                   <ChevronRightIcon />
                   Right to Information
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="d-flex text-reset text-decoration-none">
                   <ChevronRightIcon />
                   NIRF
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="d-flex text-reset text-decoration-none">
                   <ChevronRightIcon />
                   IQAC
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="d-flex text-reset text-decoration-none">
                   <ChevronRightIcon />
                   Privacy Policy
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="d-flex text-reset text-decoration-none">
                   <ChevronRightIcon />
                   Feedback @IIITB
                 </a>
               </div>
               <div className="mb-2">
-                <a href="#!" className="text-reset text-decoration-none">
+                <a href="#!" style={{fontSize:'14px'}} className="d-flex text-reset text-decoration-none">
                   <ChevronRightIcon />
                   Contact Us
                 </a>

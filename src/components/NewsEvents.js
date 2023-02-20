@@ -9,6 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Divider } from '@mui/material';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 import img1 from "../assets/images/1.jpeg"
 import img2 from "../assets/images/2.jpeg"
