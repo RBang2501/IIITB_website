@@ -42,12 +42,12 @@ export const Gallery = () => {
           fontSize: "20px",
         }}
       />
-      <div className="pt-6 py-2 container " style={{ position: "relative" }}>
+      <div className="pt-6 container " style={{ position: "relative" }}>
         <div className="row ">
           <div className="col d-flex justify-content-center my-auto" >
             <Card
-              className="shawdow border border-1"
-              sx={{ width: "80%", height: "62%" }}
+              className="shadow"
+              // sx={{ width: "80%" }}
             >
               <CardContent>
                 <img
@@ -76,7 +76,7 @@ export const Gallery = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small mb-2.5">Gallery <KeyboardArrowRightIcon/></Button>
+                <Button size="small mb-2">Gallery <KeyboardArrowRightIcon/></Button>
               </CardActions>
             </Card>
           </div>
