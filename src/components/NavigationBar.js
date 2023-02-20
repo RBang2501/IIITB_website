@@ -73,7 +73,7 @@ export const NavigationBar = () => {
 
   for(let mainHead of MainNav){
     MainElements.push(
-      <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action1" onClick={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
+      <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block' }} href="#action1" onMouseOver={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
     )
   }
 
@@ -145,7 +145,6 @@ export const NavigationBar = () => {
                 <Stack direction='row'>
                   <Stack style={{width: '150px' }} direction='column'>
                     {Sec1Elements}
-                    {console.log(Sec1Elements)}
                   </Stack>
 
                   <Divider variant='middle' color='grey' sx={{ borderRightWidth: 1 }} />
