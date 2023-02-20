@@ -15,7 +15,8 @@
 } */
 
 .event-carousel-caption{
-    transform: translate(-100px, -100px) !important;
+    position: relative;
+    transform: translate(-100px, -300px) !important;
     opacity: 0;
     text-align: left;
     width: 50% !important;
@@ -23,7 +24,7 @@
 
 .active .event-carousel-caption{
     opacity: 1;
-    transform: translate(-50px, -100px) !important;
+    transform: translate(-50px, -300px) !important;
     /* color: white; */
     font-size: 12px;
     transition-property: transform, opacity !important;
