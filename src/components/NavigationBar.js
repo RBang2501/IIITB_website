@@ -68,9 +68,9 @@ export const NavigationBar = () => {
   }
 
   for(let mainHead of MainNav){
-    let bgcolor = "#f4f5fb";
+    let bgcolor = "white";
     if(currMain == mainHead)
-      bgcolor = "white"
+      bgcolor = "#f4f5fb"
     MainElements.push(
       <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block', background: bgcolor }} href="#action1" onMouseOver={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
     )
@@ -79,9 +79,9 @@ export const NavigationBar = () => {
   if(currMain){
     console.log("curr", Sec1Array[currMain])
     for (let heading of Sec1Array[currMain]) {
-      let bgcolor = "#f4f5fb";
+      let bgcolor = "white";
       if(currSec1 == heading)
-        bgcolor = "white"
+        bgcolor = "#f4f5fb"
       Sec1Elements.push(
         <MenuItem className='border-bottom border-2 pb-3' style={{ fontFamily: 'kanit', background: bgcolor}} onMouseOver={() => { handleContentChange(heading);}}>{heading}</MenuItem>
       )
@@ -143,7 +143,7 @@ export const NavigationBar = () => {
                 onClose={handleClose}
                 TransitionComponent={Fade}
               >
-                <Stack style={{backgroundColor:'#f4f5fb'}} direction='row'>
+                <Stack direction='row'>
                   {}
                   <Stack className='ps-3' style={{width: '200px' }} direction='column'>
                     {Sec1Elements}
@@ -153,7 +153,7 @@ export const NavigationBar = () => {
                   <></>
                   :
                   <>
-                    <Divider variant='middle' color='grey' sx={{ borderRightWidth: 1 }} />
+                    <Divider variant='middle' color='#f4f5fb' sx={{ borderRightWidth: 1 }} />
                     <Stack style={{width: '400px' }} direction='column'>
                       {Sec2Elements}
                     </Stack>
