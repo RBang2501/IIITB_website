@@ -12,6 +12,8 @@ import {useState, useEffect} from 'react'
 import { NewsEvents } from "./components/NewsEvents";
 import { SocialMediaEmbed } from "./components/SocialMediaEmbed";
 import { Whyiiitb } from "./components/Whyiiitb";
+import {AlumniReview} from "./components/AlumniReview"
+
 import CircularProgress from "@mui/material/CircularProgress";
 
 import Cookies from "universal-cookie";
@@ -69,6 +71,7 @@ export const App = () => {
           <NewsEvents />
           <Whyiiitb />
           <SocialMediaEmbed />
+          <AlumniReview/>
           <Footer />
         </>
       )}
