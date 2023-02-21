@@ -25,11 +25,11 @@ export const SocialMediaEmbed = () => {
           }}
         />
         <div
-          className="d-flex justify-content-around my-5 mx-auto"
+          className="media-embed-div my-5 mx-auto"
           style={{ width: "96%" }}
         >
           {/* <div className='col-2'></div> */}
-          <div className="col-">
+          <div className="col-lg media-embed-width">
             <h4
               className="text-center mb-0 pb-0"
               style={{ fontFamily: "lobster" }}
@@ -38,7 +38,7 @@ export const SocialMediaEmbed = () => {
               Follow us on Instagram
             </h4>
             <div
-              className="insta-container my-0 py-0"
+              className="insta-container justify-content-center mx-auto my-0 py-0"
               style={{ display: "flex" }}
             >
               <InstagramEmbed
@@ -50,7 +50,7 @@ export const SocialMediaEmbed = () => {
               {/* <InstagramEmbed className='instaEmbed' captioned="false" url="https://www.instagram.com/p/CoZuU79S0u5/?utm_source=ig_web_copy_link" width={328} /> */}
             </div>
             <div
-              className="insta-container my-0 py-0"
+              className="mobile-invisible insta-container justify-content-center mx-auto my-0 py-0"
               style={{ display: "flex", transform: "translateY(-55px)" }}
             >
               <InstagramEmbed
@@ -63,18 +63,12 @@ export const SocialMediaEmbed = () => {
             </div>
           </div>
 
-          <div className="col-5">
-            <h5
-              className="text-center mb-0 pb-0 fw-bold"
-              style={{ fontFamily: "sans-serif" }}
-            >
+          <div className="col-lg-5 media-embed-width">
+            <h5 className="mobile-invisible text-center mb-0 pb-0 fw-bold" style={{ fontFamily: "sans-serif" }}>
               <LinkedIn className="mb-1" style={{ fontSize: "30px" }} />{" "}
               Linkedin
             </h5>
-            <div
-              // className="shadow"
-              style={{ height: "650px", overflow: "scroll" }}
-            >
+            <div className="mobile-invisible " style={{ height: "650px", overflow: "scroll" }}>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <LinkedInEmbed
                   className="border border-3"
@@ -102,14 +96,14 @@ export const SocialMediaEmbed = () => {
             </div>
           </div>
 
-          <div className="col-3">
+          <div className="mobile-invisible col-lg-3 media-embed-width">
             <h5 className="mb-0 pb-0 text-center" style={{ fontFamily: "monospace" }}>
               <Twitter className="mb-1" style={{ fontSize: "30px" }} />{" "}
               @IIITB_official
             </h5>
             <div
-              className="shadow-lg"
-              style={{ height: "650px", overflow: "scroll" }}
+              className="shadow-lg twitter-constraint"
+              style={{ overflow: "scroll" }}
             >
               <TwitterEmbed
                 url="https://twitter.com/IIITB_official/status/1626526926398685184?ref_src=twsrc%5Etfw"

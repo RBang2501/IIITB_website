@@ -14,24 +14,7 @@
     transition: transform 2s linear 1s !important;
 } */
 
-.event-carousel-caption{
-    position: relative;
-    transform: translate(-100px, -300px) !important;
-    opacity: 0;
-    text-align: left;
-    width: 50% !important;
-}
 
-.active .event-carousel-caption{
-    opacity: 1;
-    transform: translate(-50px, -300px) !important;
-    /* color: white; */
-    font-size: 12px;
-    transition-property: transform, opacity !important;
-    transition-timing-function: ease-out;
-    transition-duration: 2s;
-    transition-delay: 0s;
-}
 
 .carousel-control-prev{
     opacity: 0 ;

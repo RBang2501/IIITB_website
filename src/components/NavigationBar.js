@@ -74,7 +74,7 @@ export const NavigationBar = () => {
     if(currMain == mainHead)
       bgcolor = "grey"
     MainElements.push(
-      <Nav.Link className='text-center' style={{ fontFamily: 'kanit', display: 'inline-block', background: bgcolor }} href="#action1" onClick={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
+      <Nav.Link className='text-center nav-link-desktop' style={{ fontFamily: 'kanit', background: bgcolor }} href="#action1" onClick={(event)=>{handleMainSelect(mainHead); handleClick(event)}}>{mainHead}</Nav.Link>
     )
   }
 
@@ -96,7 +96,7 @@ export const NavigationBar = () => {
 
   return (
     <>
-      <Navbar className='mb-0 shadow pt-3 pb-2'>
+      <Navbar expand='lg' className='shadow pt-3 pb-2'>
         <Container fluid style={{ width: '96%' }}>
           <Navbar.Brand href="#">
             <img
@@ -111,21 +111,20 @@ export const NavigationBar = () => {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0 mx-auto d-block w-100"
-              style={{ maxHeight: '100px' }}
             // navbarScroll
             >
               {/* <div className='mx-auto'> */}
-              <h3 className='fw-bold text-center mb-3' style={{ fontFamily: 'kanit', fontWeight: '700' }}>
+              <h3 className='fw-bold text-center mb-3 mobile-invisible' style={{ fontFamily: 'kanit', fontWeight: '700' }}>
                 International Institute of Information Technology
                 <mark style={{ background: 'None', color: 'rgb(6,82,154)' }}>Bangalore</mark>
               </h3>
               <hr className='w-100 mx-auto my-0 py-0' />
               {/* </div> */}
               <div className='mx-auto w-100 row'>
-                <div className='col-8 megamenu-links'>
+                <div className='col-lg-8 col-12 megamenu-links'>
                 {MainElements}
                 </div>
-                <div className='col-4' style={{ textAlign: 'end' }}>
+                <div className='col-lg-4' style={{ textAlign: 'end' }}>
                   <Nav.Link className='border-end  text-center' style={{ fontFamily: 'kanit', display: 'inline-block', color: 'rgb(6,82,154)' }} href="#action1">NIRF</Nav.Link>
                   <Nav.Link className='border-start   text-center' style={{ fontFamily: 'kanit', display: 'inline-block', color: 'rgb(6,82,154)' }} href="#action2">IQAC</Nav.Link>
                   <Nav.Link className='border-start   text-center' style={{ fontFamily: 'kanit', display: 'inline-block', color: 'rgb(6,82,154)' }} href="#action2"><Input placeholder="Search" className='megamenu-search' style={{ display: 'inline-block', width: '100px' }} /><SearchIcon /></Nav.Link>
@@ -185,7 +184,7 @@ export const NavigationBar = () => {
             />
             <Button variant="outline-success">Search</Button>
           </Form> */}
-            <Navbar.Brand href="#" className='me-0'>
+            <Navbar.Brand href="#" className='me-0 mobile-invisible tab-invisible'>
               <img
                 src={jublee}
                 // width="30"

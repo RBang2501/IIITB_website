@@ -2,6 +2,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import './assets/styles/megamenu.css';
+import './assets/styles/responsive.css';
+
 import college_logo from "./assets/iiitb_logo.png";
 import Box from "@mui/material/Box";
 

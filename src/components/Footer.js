@@ -40,7 +40,7 @@ export const Footer = () => {
   };
   return (
     <footer
-      className="text-center text-lg-start text-muted"
+      className=" text-lg-start text-muted"
       style={{ background: "rgb(10, 25, 41)" }}
     >
       <section className="d-flex justify-content-center justify-content-lg-between p-3 border-bottom">
@@ -68,7 +68,7 @@ export const Footer = () => {
         </div>
       </section>
       <section className="text-light">
-        <div className="container text-center text-md-start pt-3">
+        <div className="container  text-md-start pt-3">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-1 border-end border-secondary border-1">
               <div className="ps-4">
@@ -196,8 +196,7 @@ export const Footer = () => {
 
                 <div className="col-md-5 col-12 ">
                   <div
-                    className="form-outline form-white mb-4 d-flex"
-                    style={{ width: "20vw", fontSize: "xx-small" }}
+                    className="footer-sub form-outline form-white mb-4 d-flex"
                   >
                     <TextField
                       id="outlined-basic"
@@ -206,7 +205,6 @@ export const Footer = () => {
                       color="primary"
                       size="small"
                       style={{
-                        width: "15vw",
                         backgroundColor: "white",
                         fontSize: "xx-small",
                       }}
@@ -257,7 +255,7 @@ export const Footer = () => {
         </div>
       </section>
 
-      <div className="text-center p-3" style={{ background: "black" }}>
+      <div className=" p-3" style={{ background: "black" }}>
         © 2023 IIIT Bangalore. All Rights Reserved
       </div>
     </footer>

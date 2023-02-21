@@ -45,100 +45,108 @@ window.addEventListener("scroll", reveal);
 
 export const Whyiiitb = () => {
     return (
-        <div className="card text-bg-dark rounded-0" style={{height:'450px', overflow:'hidden'}} id="why-card">
-            <img src={campus} className="card-img" style={{ filter: 'brightness(18%)'}} alt="..." />
+        <div className="card text-bg-dark rounded-0 why-iiitb-div" id="why-card">
+            <img src={campus} className="card-img why-campus-img" style={{ filter: 'brightness(18%)'}} alt="..." />
             <div className="card-img-overlay pt-5">
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 unwrap py-3" id="whylist">
+                        <div className="col-lg-6 unwrap py-3" id="whylist">
                             <h1 className="fw-bold mb-4">Why Join <mark style={{}}>IIIT Bangalore?</mark></h1>
-                            <h5 className="p-2" style={{ fontFamily: 'kanit', fontSize: '15px' }} id="why1">
+                            <h5 className="p-lg-2" id="why1">
                                 <img className="pe-2 me-2" style={{ width: '30px', filter:'brightness(60%)' }} src={'https://www.iiitb.ac.in/includefiles/userfiles/images/Broad-Academic-philosophy_Icon.png'} />
                                 Broad academic philosophy
                             </h5>
-                            <h5 className="p-2" style={{ fontFamily: 'kanit', fontSize: '15px' }} id="why2">
+                            <h5 className="p-lg-2" id="why2">
                                 <img className="pe-2 me-2" style={{ width: '30px', filter:'brightness(60%)' }} src={'https://www.iiitb.ac.in/includefiles/userfiles/images/practice-oriented-learning.png'} />
                                 Practice oriented learning
                             </h5>
-                            <h5 className="p-2" style={{ fontFamily: 'kanit', fontSize: '15px' }} id="why3">
+                            <h5 className="p-lg-2" id="why3">
                                 <img className="pe-2 me-2" style={{ width: '30px', filter:'brightness(60%)' }} src={'https://www.iiitb.ac.in/includefiles/userfiles/images/Emphasis-on-research_Icon.png'} />
                                 Emphasis on research
                             </h5>
-                            <h5 className="p-2" style={{ fontFamily: 'kanit', fontSize: '15px' }} id="why4">
+                            <h5 className="p-lg-2" id="why4">
                                 <img className="pe-2 me-2" style={{ width: '30px', filter:'brightness(60%)' }} src={'https://www.iiitb.ac.in/includefiles/userfiles/images/Entrepreneurial-support_icon.png'} />
                                 Enterpreneurial support
                             </h5>
-                            <h5 className="p-2" style={{ fontFamily: 'kanit', fontSize: '15px' }} id="why5">
+                            <h5 className="p-lg-2" id="why5">
                                 <img className="pe-2 me-2" style={{ width: '30px', filter:'brightness(60%)' }} src={'https://www.iiitb.ac.in/includefiles/userfiles/images/Excellent-peer-group_Icon.png'} />
                                 Excellent peer group
                             </h5>
-                            <h5 className="p-2" style={{ fontFamily: 'kanit', fontSize: '15px' }} id="why6">
+                            <h5 className="p-lg-2" id="why6">
                                 <img className="pe-2 me-2" style={{ width: '30px', filter:'brightness(60%)' }} src={'https://www.iiitb.ac.in/includefiles/userfiles/images/Global-exchange-student_Icon.png'} />
                                 Global exchange opportunity
                             </h5>
                         </div>
-                        <div className="col-6 row">
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <MenuBookIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                        <div className="col-lg-6 row">
+                            <div className="col-4 d-flex px-0 fact-div">
+                                <MenuBookIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
+                                <MenuBookIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <div className="ps-2 my-auto fact-numbers" >
                                     <CountUp enableScrollSpy end={554} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>iMTech</h6>
+                                    <h6 className="pt-0 mt-0" >iMTech</h6>
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <LaptopChromebookIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                            <div className="col-4 d-flex px-0 fact-div">
+                                <LaptopChromebookIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
+                                <LaptopChromebookIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <div className="ps-2 my-auto fact-numbers" >
                                     <CountUp enableScrollSpy end={358} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>MTech</h6>
+                                    <h6 className="pt-0 mt-0" >MTech</h6>
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <RocketLaunchIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                            <div className="col-4 d-flex px-0 fact-div">
+                                <RocketLaunchIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
+                                <RocketLaunchIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <div className="ps-2 my-auto fact-numbers" >
                                     <CountUp enableScrollSpy end={50} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Startups</h6>
+                                    <h6 className="pt-0 mt-0" >Startups</h6>
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <HailIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                            <div className="col-4 d-flex px-0 fact-div">
+                                <HailIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
+                                <HailIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <div className="ps-2 my-auto fact-numbers" >
                                     <CountUp enableScrollSpy end={61} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Faculty</h6>
+                                    <h6 className="pt-0 mt-0" >Faculty</h6>
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <BiotechIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                            <div className="col-4 d-flex px-0 fact-div">
+                                <BiotechIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
+                                <BiotechIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <div className="ps-2 my-auto fact-numbers" >
                                     <CountUp enableScrollSpy end={178} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Research Scholars</h6>
+                                    <h6 className="pt-0 mt-0" >Research Scholars</h6>
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <SchoolIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                            <div className="col-4 d-flex px-0 fact-div">
+                                <SchoolIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
+                                <SchoolIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <div className="ps-2 my-auto fact-numbers" >
                                     <CountUp enableScrollSpy end={3500} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Alumni</h6>
+                                    <h6 className="pt-0 mt-0" >Alumni</h6>
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <AutoStoriesIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                            <div className="col-4 d-flex px-0 fact-div">
+                                <AutoStoriesIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
+                                <AutoStoriesIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <div className="ps-2 my-auto fact-numbers" >
                                     <CountUp enableScrollSpy end={1200} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>Publications</h6>
+                                    <h6 className="pt-0 mt-0" >Publications</h6>
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0" style={{ height: '100px', width: '180px' }}>
-                                <AccountBalanceIcon className="my-auto" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <div className="ps-2 my-auto" style={{ fontFamily: 'kanit', fontSize: '20px', fontWeight: '700' }}>
+                            <div className="col-4 d-flex px-0 fact-div">
+                                <AccountBalanceIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
+                                <AccountBalanceIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <div className="ps-2 my-auto fact-numbers" >
                                     <CountUp enableScrollSpy end={617362.8} duration={2}></CountUp>
-                                    <h6 className="pt-0 mt-0" style={{ fontSize: '12px' }}>sq ft of Space</h6>
+                                    <h6 className="pt-0 mt-0" >sq ft of Space</h6>
                                 </div>
                             </div>
                             {/* <CountUp end={100} duration={2}></CountUp> */}

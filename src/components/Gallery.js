@@ -43,11 +43,11 @@ export const Gallery = () => {
         }}
       />
       <div className="pt-6 container " style={{ position: "relative" }}>
-        <div className="row ">
-          <div className="col d-flex justify-content-center my-auto" >
+        <div className="row">
+          <div className="col d-flex justify-content-center my-auto h-100" >
             <Card
-              className="shadow"
-              sx={{ width: "80%"}}
+              className="shadow gallery-card"
+              // sx={{ height: 550}}
             >
               <CardContent>
                 <img
@@ -76,15 +76,14 @@ export const Gallery = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small mb-2">Gallery <KeyboardArrowRightIcon/></Button>
+                <Button className="mobile-invisible" size="small mb-2">Gallery <KeyboardArrowRightIcon/></Button>
               </CardActions>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center border-start border-1 ">
+          <div className="gallery-image-list col d-flex justify-content-center border-start border-1 ">
             <ImageList
               sx={{
                 width: 800,
-                height: 550,
                 boxShadow:
                   "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
               }}

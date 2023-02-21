@@ -31,7 +31,7 @@ const responsive = {
     mobile: {
         breakpoint: { max: 464, min: 0 },
         items: 1,
-        slidesToSlide: 1 // optional, default to 1.
+        // slidesToSlide: 1 // optional, default to 1.
     }
 };
 
@@ -56,7 +56,7 @@ export const NewsEvents = () => {
         />
         <Carousel
         className='pb-4'
-          centerMode={true}
+          // centerMode={true}
           responsive={responsive}
           autoPlay="true"
           infinite="true"
@@ -71,7 +71,7 @@ export const NewsEvents = () => {
           itemClass="carousel-item-padding-40-px"
         >
           <div className="mx-3 shadow">
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className='mx-auto news-card'>
               <CardMedia
                 component="img"
                 alt="green iguana"
@@ -101,7 +101,7 @@ export const NewsEvents = () => {
             </Card>
           </div>
           <div className="mx-3 shadow">
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className='mx-auto news-card'>
               <CardMedia
                 component="img"
                 alt="green iguana"
@@ -125,7 +125,7 @@ export const NewsEvents = () => {
             </Card>
           </div>
           <div className="mx-3 shadow">
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className='mx-auto news-card'>
               <CardMedia
                 component="img"
                 alt="green iguana"
@@ -149,7 +149,7 @@ export const NewsEvents = () => {
             </Card>
           </div>
           <div className="mx-3 shadow">
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className='mx-auto news-card'>
               <CardMedia
                 component="img"
                 alt="green iguana"
@@ -173,7 +173,7 @@ export const NewsEvents = () => {
             </Card>
           </div>
           <div className="mx-3 shadow">
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className='mx-auto news-card'>
               <CardMedia
                 component="img"
                 alt="green iguana"
