@@ -14,6 +14,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import Fade from '@mui/material/Fade';
 
 import { ButtonGroup, Paper, Divider, Stack, Menu, MenuItem } from '@mui/material';
+import TextField from '@mui/material/TextField';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+// import SearchIcon from '@mui/icons-material/Search';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
 
 
 import college_logo from "../assets/iiitb_logo.png"
@@ -79,7 +84,7 @@ export const NavigationBar = () => {
     const Sec1MobElements = []
     for (let heading of Sec1Array[mainHead]) {
       const Sec2MobElements = []
-      for (let subHeading of Sec2Contents[heading]){
+      for (let subHeading of Sec2Contents[heading]) {
         Sec2MobElements.push(
           <Accordion.Item eventKey={mainHead + heading + subHeading}>
             <Accordion.Header>{subHeading}</Accordion.Header>
@@ -87,14 +92,14 @@ export const NavigationBar = () => {
         )
       }
       Sec1MobElements.push(
-              <Accordion.Item eventKey={mainHead + heading}>
-                <Accordion.Header>{heading}</Accordion.Header>
-                <Accordion.Body>
-                  <Accordion>
-                    {Sec2MobElements}
-                  </Accordion>
-                </Accordion.Body>
-              </Accordion.Item>
+        <Accordion.Item eventKey={mainHead + heading}>
+          <Accordion.Header>{heading}</Accordion.Header>
+          <Accordion.Body>
+            <Accordion>
+              {Sec2MobElements}
+            </Accordion>
+          </Accordion.Body>
+        </Accordion.Item>
       )
     }
 
@@ -114,7 +119,7 @@ export const NavigationBar = () => {
     let bgcolor = "white";
     if (currMain == mainHead)
       bgcolor = "grey"
-    
+
     MainElements.push(
       <Nav.Link className='text-center nav-link-desktop' style={{ fontFamily: 'kanit', background: bgcolor }} href="#action1" onClick={(event) => { handleMainSelect(mainHead); handleClick(event) }}>{mainHead}</Nav.Link>
     )
@@ -243,11 +248,22 @@ export const NavigationBar = () => {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
-                Offcanvas
+                <img
+                  src={college_logo}
+                  // width="30"
+                  height="60px"
+                  className="d-inline-block align-top"
+                  alt="React Bootstrap logo"
+                />
               </Offcanvas.Title>
+
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav.Link className='w-100 border-start text-center' style={{ fontFamily: 'kanit', display: 'inline-block', color: 'rgb(6,82,154)' }} href="#action2">
+                  <Input placeholder="Search" className='w-75 megamenu-search' style={{ display: 'inline-block', width: '100px' }} />
+                  <SearchIcon className=''/>
+                </Nav.Link>
                 <div className='col-lg-8 col-12 megamenu-links'>
                   {MobileElements}
                 </div>

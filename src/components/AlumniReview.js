@@ -37,7 +37,7 @@ export const AlumniReview = () => {
     };
     return (
         <>
-            {/* <div className='mb-4 mx-auto pt-3' style={{ width: '96%' }}>
+            <div className='mobile-invisible mb-4 mx-auto pt-3' style={{ width: '96%' }}>
                 <h3 className="text-center fw-bold">Alumni-@IIITB</h3>
                 <h6 className="text-center text-secondary">All that's new and happening at IIITB</h6>
                 <Carousel
@@ -91,7 +91,7 @@ export const AlumniReview = () => {
                     </div>
 
                 </Carousel>
-            </div> */}
+            </div>
         </>
     );
 }

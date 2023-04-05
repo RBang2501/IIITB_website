@@ -235,16 +235,14 @@
         width: fit-content !important;
     }
 
-    .news-card:hover {
+    /* .news-card:hover {
         background-color: rgba(0, 0, 0, 0.743);
-        /* transition: linear; */
-        /* filter: opacity(0.5); */
         transition-property: background-color !important;
         transition-timing-function: ease-out;
         transition-duration: 1s;
         transition-delay: 0s;
         color: white;
-    }
+    } */
 
     .stick-access {
         position: fixed;
