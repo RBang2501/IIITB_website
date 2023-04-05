@@ -37,10 +37,7 @@ const responsive = {
 
 export const NewsEvents = () => {
     return (
-      <div
-        className="bg-white shadow pt-3 my-3 mt-5 rounded mx-auto"
-        style={{ width: "96%" }}
-      >
+      <div className="bg-white shadow pt-3 my-3 mt-5 rounded mx-auto" style={{ width: "96%" }}>
         <h3 className="text-center fw-bold">News & Events</h3>
         <h6 className="text-center text-secondary">
           All that's new and happening at IIITB
@@ -88,7 +85,7 @@ export const NewsEvents = () => {
                   VLSI DESIGN CONTEST
                 </Typography>
                 {/* <hr className='pb-0 pt-0'/> */}
-                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
+                <Typography variant="body2 " style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
@@ -113,7 +110,7 @@ export const NewsEvents = () => {
                   BTS Silver Jubilee Icon Award
                 </Typography>
                 {/* <hr className='pb-0 pt-0'/> */}
-                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
+                <Typography variant="body2 " style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
@@ -137,7 +134,7 @@ export const NewsEvents = () => {
                   Graduation ceremony of CPE
                 </Typography>
                 {/* <hr className='pb-0 pt-0'/> */}
-                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
+                <Typography variant="body2 " style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
@@ -161,7 +158,7 @@ export const NewsEvents = () => {
                   CGI Scholarship for Top 20 girl students
                 </Typography>
                 {/* <hr className='pb-0 pt-0'/> */}
-                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
+                <Typography variant="body2 " style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>
@@ -185,7 +182,7 @@ export const NewsEvents = () => {
                   Secure Multi-party Computation Against Passive Adv
                 </Typography>
                 {/* <hr className='pb-0 pt-0'/> */}
-                <Typography variant="body2 " color="text.secondary" style={{fontSize:'14px'}}>
+                <Typography variant="body2 " style={{fontSize:'14px'}}>
                   Our 1st year M.Tech ECE students Vinay Rayapati, Gopala
                   Krishna Reddy Sanampudi, Ravi Kiran Reddy..
                 </Typography>

@@ -1,22 +1,25 @@
-@media only screen and (max-width: 480px)  {
-    .mobile-invisible{
-        display:none !important;
+@media only screen and (max-width: 480px) {
+    .mobile-invisible {
+        display: none !important;
     }
-    .event-carousel-item{
-        height:20vh !important
+
+    .event-carousel-item {
+        height: 20vh !important
     }
-    .event-carousel-caption h3,h5{
+
+    .event-carousel-caption h3, h5 {
         font-size: 8px !important;
     }
-    .event-carousel-caption{
+
+    .event-carousel-caption {
         position: relative;
         transform: translate(-100px, -100px) !important;
         opacity: 0;
         text-align: left;
         width: 50% !important;
     }
-    
-    .active .event-carousel-caption{
+
+    .active .event-carousel-caption {
         opacity: 1;
         transform: translate(0px, -100px) !important;
         /* color: white; */
@@ -27,89 +30,124 @@
         transition-delay: 0s;
     }
 
-    .know-more-button{
-        font-size: 8px ;
+    .know-more-button {
+        font-size: 8px;
         padding: 3px;
     }
 
-    .news-card{
+    .news-card {
         width: 100% !important;
     }
-    h1{
-        font-size:20px;
+
+    h1 {
+        font-size: 20px;
     }
-    #why-card{
-        height:400px ;
-        overflow: hidden ;
+
+    #why-card {
+        height: 500px;
+        overflow: hidden;
         width: 96%;
     }
-    .fact-numbers{
-        font-size:8px;
+    #whylist h5 {
+        font-size: 13px !important;
+    }
+    #whylist h1{
+        font-size: 25px !important;
+    }
+
+    .fact-numbers {
+        font-size: 15px;
         font-weight: 700;
     }
-    .fact-numbers h6{
-        font-size:8px;
+
+    .fact-numbers h6 {
+        font-size: 10px;
     }
-    .why-campus-img{
+
+    .why-campus-img {
         height: 100%;
         /* width: 100%; */
     }
-    .review-card{
-        height:400px;
-        width:400px;
+
+    .review-card {
+        height: 400px;
+        width: 400px;
     }
-    .media-embed-width{
+
+    .media-embed-width {
         width: 100%;
     }
-    .twitter-constraint{
-        height:400px;
+
+    .twitter-constraint {
+        height: 400px;
     }
-    .gallery-card{
+
+    .gallery-card {
         text-align: center;
     }
+
     /* .gallery-height{
         height: 200px !important;
         overflow: hidden !important;
     } */
-    .footer-sub{
-        width:100vw;
+    .footer-sub {
+        width: 100vw;
         font-size: xx-small;
     }
-    .footer-sub-textfield{
-        width:100vw;
+
+    .footer-sub-textfield {
+        width: 100vw;
+    }
+
+    .stick-access {
+        position: fixed;
+        display: grid;
+        bottom: 20px;
+        right: 10px;
+        z-index: 100;
+    }
+
+    .stick-navigation {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 10px;
+        z-index: 100;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px)  {
-    .tab-invisible{
-        display:none;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .tab-invisible {
+        display: none;
     }
-    .event-carousel-item{
-        
-    }
+
+    .event-carousel-item {}
 }
 
-@media only screen and (min-width: 769px)  {
-    .desktop-invisible{
+@media only screen and (min-width: 769px) {
+    .desktop-invisible {
         display: none !important;
     }
-    .nav-link-desktop{
+
+    .nav-link-desktop {
         display: inline-block;
     }
-    .event-carousel-item{
-        height:70vh !important;
+
+    .event-carousel-item {
+        height: 70vh !important;
     }
-    .event-carousel-caption{
+
+    .event-carousel-caption {
         position: relative;
         transform: translate(-100px, -300px) !important;
         opacity: 0;
         text-align: left;
         width: 50% !important;
-        height:70vh !important;
-        overflow:hidden !important;
+        height: 70vh !important;
+        overflow: hidden !important;
     }
-    
-    .active .event-carousel-caption{
+
+    .active .event-carousel-caption {
         opacity: 1;
         transform: translate(-50px, -300px) !important;
         /* color: white; */
@@ -119,51 +157,95 @@
         transition-duration: 2s;
         transition-delay: 0s;
     }
-    #whylist h5{
-        font-size:15px;
+
+    /* #whylist h5 {
+        font-size: 15px;
+    } */
+
+    #why-card {
+        height: 450px;
+        overflow: hidden;
     }
-    #why-card{
-        height:450px ;
-        overflow: hidden ;
+
+    .fact-div {
+        height: 100px;
+        width: 180px;
     }
-    .fact-div{
-        height:100px;
-        width:180px;
-    }
-    .fact-numbers{
-        font-size:20px;
+
+    .fact-numbers {
+        font-size: 20px;
         font-weight: 700;
     }
-    .fact-numbers{
-        font-size:20px;
+
+    .fact-numbers {
+        font-size: 20px;
         font-weight: 700;
     }
-    .fact-numbers h6{
-        font-size:12px;
+
+    .fact-numbers h6 {
+        font-size: 12px;
     }
-    .review-card{
-        height:400px;
-        width:400px;
+
+    .review-card {
+        height: 400px;
+        width: 400px;
     }
-    .media-embed-div{
-        display:flex; 
-        justify-content:space-around !important; 
+
+    .media-embed-div {
+        display: flex;
+        justify-content: space-around !important;
     }
-    .twitter-constraint{
-        height:650px;
+
+    .twitter-constraint {
+        height: 650px;
     }
-    .gallery-card{
-        height: 550px ;
+
+    .gallery-card {
+        height: 550px;
     }
-    .gallery-image-list{
-        height:550px !important;
+
+    .gallery-image-list {
+        height: 550px !important;
     }
-    .footer-sub{
-        width:20vw;
+
+    .footer-sub {
+        width: 20vw;
         font-size: xx-small;
     }
-    .footer-sub-textfield{
-        width:15vw;
+
+    .footer-sub-textfield {
+        width: 15vw;
     }
-    
+
+    .news-card {
+        max-width: 400px !important;
+        width: fit-content !important;
+    }
+
+    .news-card:hover {
+        background-color: rgba(0, 0, 0, 0.743);
+        /* transition: linear; */
+        /* filter: opacity(0.5); */
+        transition-property: background-color !important;
+        transition-timing-function: ease-out;
+        transition-duration: 1s;
+        transition-delay: 0s;
+        color: white;
+    }
+
+    .stick-access {
+        position: fixed;
+        top: 45%;
+        right: 10px;
+        z-index: 100;
+        display: grid;
+    }
+
+    .stick-navigation {
+        position: fixed;
+        top: 55%;
+        right: 10px;
+        z-index: 100;
+    }
+
 }

@@ -80,72 +80,72 @@ export const Whyiiitb = () => {
                         <div className="col-lg-6 row">
                             <div className="col-4 d-flex px-0 fact-div">
                                 <MenuBookIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <MenuBookIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <MenuBookIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
-                                    <CountUp enableScrollSpy end={554} duration={2}></CountUp>
+                                    <CountUp enableScrollSpy scrollSpyOnce end={554} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" >iMTech</h6>
                                 </div>
                             </div>
 
                             <div className="col-4 d-flex px-0 fact-div">
                                 <LaptopChromebookIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <LaptopChromebookIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <LaptopChromebookIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
-                                    <CountUp enableScrollSpy end={358} duration={2}></CountUp>
+                                    <CountUp enableScrollSpy scrollSpyOnce end={358} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" >MTech</h6>
                                 </div>
                             </div>
 
                             <div className="col-4 d-flex px-0 fact-div">
                                 <RocketLaunchIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <RocketLaunchIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <RocketLaunchIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
-                                    <CountUp enableScrollSpy end={50} duration={2}></CountUp>
+                                    <CountUp enableScrollSpy scrollSpyOnce end={50} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" >Startups</h6>
                                 </div>
                             </div>
 
                             <div className="col-4 d-flex px-0 fact-div">
                                 <HailIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <HailIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <HailIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
-                                    <CountUp enableScrollSpy end={61} duration={2}></CountUp>
+                                    <CountUp enableScrollSpy scrollSpyOnce end={61} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" >Faculty</h6>
                                 </div>
                             </div>
 
                             <div className="col-4 d-flex px-0 fact-div">
                                 <BiotechIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <BiotechIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <BiotechIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
-                                    <CountUp enableScrollSpy end={178} duration={2}></CountUp>
+                                    <CountUp enableScrollSpy scrollSpyOnce end={178} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" >Research Scholars</h6>
                                 </div>
                             </div>
 
                             <div className="col-4 d-flex px-0 fact-div">
                                 <SchoolIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <SchoolIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <SchoolIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
-                                    <CountUp enableScrollSpy end={3500} duration={2}></CountUp>
+                                    <CountUp enableScrollSpy scrollSpyOnce end={3500} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" >Alumni</h6>
                                 </div>
                             </div>
 
                             <div className="col-4 d-flex px-0 fact-div">
                                 <AutoStoriesIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <AutoStoriesIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <AutoStoriesIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
-                                    <CountUp enableScrollSpy end={1200} duration={2}></CountUp>
+                                    <CountUp enableScrollSpy scrollSpyOnce end={1200} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" >Publications</h6>
                                 </div>
                             </div>
 
                             <div className="col-4 d-flex px-0 fact-div">
                                 <AccountBalanceIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
-                                <AccountBalanceIcon className="my-auto desktop-invisible" sx={{ fontSize: 20, color: yellow[100] }} />
+                                <AccountBalanceIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
-                                    <CountUp enableScrollSpy end={617362.8} duration={2}></CountUp>
+                                    <CountUp enableScrollSpy scrollSpyOnce end={617362.8} duration={2}></CountUp>
                                     <h6 className="pt-0 mt-0" >sq ft of Space</h6>
                                 </div>
                             </div>

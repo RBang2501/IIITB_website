@@ -40,7 +40,7 @@ export const Footer = () => {
   };
   return (
     <footer
-      className=" text-lg-start text-muted"
+      className="text-lg-start text-muted mobile-invisible"
       style={{ background: "rgb(10, 25, 41)" }}
     >
       <section className="d-flex justify-content-center justify-content-lg-between p-3 border-bottom">
@@ -88,7 +88,6 @@ export const Footer = () => {
                 </h6>
               </div>
 
-              {/* <h6 className=" fw-bold mb-1">Address:</h6> */}
               <p style={{fontSize:'12px'}}>
                 <LocalPhoneIcon /> +91-804-1407777
               </p>

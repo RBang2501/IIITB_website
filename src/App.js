@@ -7,15 +7,22 @@ import './assets/styles/responsive.css';
 import college_logo from "./assets/iiitb_logo.png";
 import Box from "@mui/material/Box";
 
-import {Gallery} from "./components/Gallery"
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
+import AccessibilityIcon from '@mui/icons-material/Accessibility';
+import NavigationIcon from '@mui/icons-material/Navigation';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+
+import { Gallery } from "./components/Gallery"
 import { NavigationBar } from "./components/NavigationBar";
-import { EventCarousel} from "./components/EventCarousel"
+import { EventCarousel } from "./components/EventCarousel"
 import { Footer } from "./components/Footer"
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import { NewsEvents } from "./components/NewsEvents";
 import { SocialMediaEmbed } from "./components/SocialMediaEmbed";
 import { Whyiiitb } from "./components/Whyiiitb";
-import {AlumniReview} from "./components/AlumniReview"
+import { AlumniReview } from "./components/AlumniReview"
+import { Location } from './components/Location';
 
 import CircularProgress from "@mui/material/CircularProgress";
 
@@ -65,19 +72,28 @@ export const App = () => {
             <CircularProgress />
           </Box>
         </div>
-      ) 
-      : (
-        <>
-          <NavigationBar />
-          <EventCarousel />
-          <NewsEvents />
-          <Whyiiitb />
-          <SocialMediaEmbed />
-          <Gallery/> 
-          <AlumniReview/>
-          <Footer />
-        </>
-      )}
+      )
+        : (
+          <>
+            <NavigationBar />
+            <div className='stick-access'>
+              <Fab className='mb-1' color="primary" aria-label="access" style={{backgroundColor:'white', color:'rgb(6, 82, 154)'}}>
+                <AccessibilityIcon />
+              </Fab>
+              <Fab className='mobile-invisible' color="primary" aria-label="location" style={{backgroundColor:'white', color:'rgb(6, 82, 154)'}}>
+                <LocationOnIcon />
+              </Fab>
+            </div>
+            <EventCarousel />
+            <NewsEvents />
+            <Whyiiitb />
+            <SocialMediaEmbed />
+            <Gallery />
+            <AlumniReview />
+            <Location />
+            <Footer />
+          </>
+        )}
     </div>
   );
 };
