@@ -40,7 +40,7 @@ export const Footer = () => {
   };
   return (
     <footer
-      className="text-lg-start text-muted mobile-invisible"
+      className="text-lg-start text-muted mobile-footer"
       style={{ background: "rgb(10, 25, 41)" }}
     >
       <section className="d-flex justify-content-center justify-content-lg-between p-3 border-bottom">
@@ -253,6 +253,8 @@ export const Footer = () => {
           </div>
         </div>
       </section>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15559.89573890495!2d77.663216!3d12.84496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae135aeb7f340f%3A0x3ad86af40d2ac611!2sInternational%20Institute%20of%20Information%20Technology%2C%20Bangalore!5e0!3m2!1sen!2sus!4v1680683122520!5m2!1sen!2sus" width="100%" height="200" style={{border:0, allowfullscreen:"", loading:"lazy", referrerpolicy:"no-referrer-when-downgrade"}}></iframe>
 
       <div className=" p-3" style={{ background: "black" }}>
         © 2023 IIIT Bangalore. All Rights Reserved

@@ -17,6 +17,48 @@ export const EventCarousel = () => {
                     <Carousel.Item interval={5000} className='event-carousel-item'>
                         <img
                             className="d-block w-100 event-carousel-img"
+                            src="https://iiitb.ac.in/includefiles/banners/Website_banner21.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption className='event-carousel-caption'>
+                            <h3 className='fw-bold mb-lg-4'>Being in Oblivion</h3>
+                            <h5 className='mb-lg-4'>
+                                Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                            </h5>
+                            <button className='know-more-button mt-lg-2 mt-0 btn btn-light'>Know More</button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={5000} className='event-carousel-item'>
+                        <img
+                            className="d-block w-100 event-carousel-img"
+                            src="https://iiitb.ac.in/includefiles/banners/Website_banner31.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption className='event-carousel-caption'>
+                            <h3 className='fw-bold mb-lg-4'>Being in Oblivion</h3>
+                            <h5 className='mb-lg-4'>
+                                Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                            </h5>
+                            <button className='know-more-button mt-lg-2 mt-0 btn btn-light'>Know More</button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={5000} className='event-carousel-item'>
+                        <img
+                            className="d-block w-100 event-carousel-img"
+                            src="https://iiitb.ac.in/includefiles/banners/Website_banner8.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption className='event-carousel-caption'>
+                            <h3 className='fw-bold mb-lg-4'>Being in Oblivion</h3>
+                            <h5 className='mb-lg-4'>
+                                Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                            </h5>
+                            <button className='know-more-button mt-lg-2 mt-0 btn btn-light'>Know More</button>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={5000} className='event-carousel-item'>
+                        <img
+                            className="d-block w-100 event-carousel-img"
                             src="https://iiitb.ac.in/includefiles/banners/jubileee.jpg"
                             alt="First slide"
                         />
@@ -79,7 +121,7 @@ export const EventCarousel = () => {
                         <Carousel.Caption className='event-carousel-caption'>
                             <h3 className='fw-bold mb-lg-4'>Being in Oblivion</h3>
                             <h5 className='mb-lg-4'>
-                                Is being in oblivion the hallmark of today’s youth? The poor attendance in many events particularly in the academic and quasi-academic realm in...
+                            IIIT Bangalore has a modern and well-designed campus spread across 10 acres in Electronic City, Bangalore. The campus features state-of-the-art infrastructure, including smart classrooms, high-speed internet connectivity, and well-equipped laboratories.
                             </h5>
                             <button className='know-more-button mt-lg-2 mt-0 btn btn-light'>Know More</button>
                         </Carousel.Caption>
@@ -87,7 +129,7 @@ export const EventCarousel = () => {
                 </Carousel>
 
             </div>
-            
+
 
         </>
     );

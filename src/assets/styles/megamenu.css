@@ -1,13 +1,4 @@
-.event-carousel-img {
-    filter: brightness(100%);
-}
-.active .event-carousel-img {
-    filter: brightness(30%);
-    transition-property: filter !important;
-    transition-timing-function: ease-out;
-    transition-duration: 2s;
-    transition-delay: 0s;
-}
+
 
 /* .event-carousel-caption {
     transform: translate(0px, -100px) !important;

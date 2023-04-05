@@ -80,9 +80,9 @@ export const App = () => {
               <Fab className='mb-1' color="primary" aria-label="access" style={{backgroundColor:'white', color:'rgb(6, 82, 154)'}}>
                 <AccessibilityIcon />
               </Fab>
-              <Fab className='mobile-invisible' color="primary" aria-label="location" style={{backgroundColor:'white', color:'rgb(6, 82, 154)'}}>
+              {/* <Fab className='' color="primary" aria-label="location" style={{backgroundColor:'white', color:'rgb(6, 82, 154)'}}>
                 <LocationOnIcon />
-              </Fab>
+              </Fab> */}
             </div>
             <EventCarousel />
             <NewsEvents />
@@ -90,8 +90,8 @@ export const App = () => {
             <SocialMediaEmbed />
             <Gallery />
             <AlumniReview />
-            <Location />
             <Footer />
+            {/* <Location /> */}
           </>
         )}
     </div>

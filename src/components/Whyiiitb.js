@@ -45,7 +45,7 @@ window.addEventListener("scroll", reveal);
 
 export const Whyiiitb = () => {
     return (
-        <div className="card text-bg-dark rounded-0 why-iiitb-div" id="why-card">
+        <div className="card text-bg-dark rounded-0 why-iiitb-div mx-auto" id="why-card">
             <img src={campus} className="card-img why-campus-img" style={{ filter: 'brightness(18%)'}} alt="..." />
             <div className="card-img-overlay pt-5">
                 <div className="container">
@@ -78,7 +78,7 @@ export const Whyiiitb = () => {
                             </h5>
                         </div>
                         <div className="col-lg-6 row">
-                            <div className="col-4 d-flex px-0 fact-div">
+                            <div className="col-6 col-lg-4 d-flex px-0 fact-div">
                                 <MenuBookIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <MenuBookIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
@@ -87,7 +87,7 @@ export const Whyiiitb = () => {
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0 fact-div">
+                            <div className="col-6 col-lg-4 d-flex px-0 fact-div">
                                 <LaptopChromebookIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <LaptopChromebookIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
@@ -96,7 +96,7 @@ export const Whyiiitb = () => {
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0 fact-div">
+                            <div className="col-6 col-lg-4 d-flex px-0 fact-div">
                                 <RocketLaunchIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <RocketLaunchIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
@@ -105,7 +105,7 @@ export const Whyiiitb = () => {
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0 fact-div">
+                            <div className="col-6 col-lg-4 d-flex px-0 fact-div">
                                 <HailIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <HailIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
@@ -114,7 +114,7 @@ export const Whyiiitb = () => {
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0 fact-div">
+                            <div className="col-6 col-lg-4 d-flex px-0 fact-div">
                                 <BiotechIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <BiotechIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
@@ -123,7 +123,7 @@ export const Whyiiitb = () => {
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0 fact-div">
+                            <div className="col-6 col-lg-4 d-flex px-0 fact-div">
                                 <SchoolIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <SchoolIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
@@ -132,7 +132,7 @@ export const Whyiiitb = () => {
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0 fact-div">
+                            <div className="col-6 col-lg-4 d-flex px-0 fact-div">
                                 <AutoStoriesIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <AutoStoriesIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >
@@ -141,7 +141,7 @@ export const Whyiiitb = () => {
                                 </div>
                             </div>
 
-                            <div className="col-4 d-flex px-0 fact-div">
+                            <div className="col-6 col-lg-4 d-flex px-0 fact-div">
                                 <AccountBalanceIcon className="my-auto mobile-invisible" sx={{ fontSize: 60, color: yellow[100] }} />
                                 <AccountBalanceIcon className="my-auto desktop-invisible" sx={{ fontSize: 30, color: yellow[100] }} />
                                 <div className="ps-2 my-auto fact-numbers" >

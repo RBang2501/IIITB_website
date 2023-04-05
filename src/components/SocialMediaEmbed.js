@@ -50,7 +50,7 @@ export const SocialMediaEmbed = () => {
               {/* <InstagramEmbed className='instaEmbed' captioned="false" url="https://www.instagram.com/p/CoZuU79S0u5/?utm_source=ig_web_copy_link" width={328} /> */}
             </div>
             <div
-              className="mobile-invisible insta-container justify-content-center mx-auto my-0 py-0"
+              className="insta-container justify-content-center mx-auto my-0 py-0"
               style={{ display: "flex", transform: "translateY(-55px)" }}
             >
               <InstagramEmbed
@@ -63,12 +63,12 @@ export const SocialMediaEmbed = () => {
             </div>
           </div>
 
-          <div className="col-lg-5 media-embed-width">
-            <h5 className="mobile-invisible text-center mb-0 pb-0 fw-bold" style={{ fontFamily: "sans-serif" }}>
+          <div className="mobile-invisible col-lg-5 media-embed-width">
+            <h5 className="text-center mb-0 pb-0 fw-bold" style={{ fontFamily: "sans-serif" }}>
               <LinkedIn className="mb-1" style={{ fontSize: "30px" }} />{" "}
               Linkedin
             </h5>
-            <div className="mobile-invisible " style={{ height: "650px", overflow: "scroll" }}>
+            <div className="" style={{ height: "650px", overflow: "scroll" }}>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <LinkedInEmbed
                   className="border border-3"
@@ -93,6 +93,24 @@ export const SocialMediaEmbed = () => {
                   height={280}
                 />
               </div>
+            </div>
+          </div>
+
+          <div className='desktop-invisible pb-3'>
+            <h3
+              className="text-center mb-0 pb-0 fw-bold"
+              style={{ fontFamily: "kanit" }}
+            >
+              <YouTube className="mb-1" style={{ fontSize: "50px" }} /> IITB
+              Campus Tour
+            </h3>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <YouTubeEmbed
+                className="border rounded border-3"
+                url="https://youtu.be/eln9l9SxKyo"
+                width="100%"
+                height={280}
+              />
             </div>
           </div>
 
