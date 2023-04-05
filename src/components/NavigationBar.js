@@ -46,11 +46,15 @@ export const NavigationBar = () => {
   const MainElements = []
   const Sec1Elements = []
   const Sec2Elements = []
+
+  const MobileElements = []
+
   const MainNav = ["Research", "Academics", "Campus Life", "Media", "People", "About Us"]
   const Sec1Array = {
     "": [],
     "Research": ["Centers", "Labs", "Outreach", "Publications", "Policy"],
-    "Academics": ["Domains", "Programmes", "Admissions", "Placements", "Exchange Program", "Verification Process", "Curriculum", "Programme Outcomes", "Academic Calendar", "Online Education", "Continuing Professional Education"],
+    "Academics": ["Domains", "Programmes"],
+    // , "Admissions", "Placements", "Exchange Program", "Verification Process", "Curriculum", "Programme Outcomes", "Academic Calendar", "Online Education", "Continuing Professional Education"],
     "Campus Life": [],
     "Media": [],
     "People": [],
@@ -68,20 +72,55 @@ export const NavigationBar = () => {
     "Publications": [],
     "Policy": [],
     "Domains": ["dom1", "dom2", "dom3"],
-    "Programms": ["pr1", "pr2"],
+    "Programmes": ["pr1", "pr2"],
   }
 
   for (let mainHead of MainNav) {
+    const Sec1MobElements = []
+    for (let heading of Sec1Array[mainHead]) {
+      const Sec2MobElements = []
+      for (let subHeading of Sec2Contents[heading]){
+        Sec2MobElements.push(
+          <Accordion.Item eventKey={mainHead + heading + subHeading}>
+            <Accordion.Header>{subHeading}</Accordion.Header>
+          </Accordion.Item>
+        )
+      }
+      Sec1MobElements.push(
+              <Accordion.Item eventKey={mainHead + heading}>
+                <Accordion.Header>{heading}</Accordion.Header>
+                <Accordion.Body>
+                  <Accordion>
+                    {Sec2MobElements}
+                  </Accordion>
+                </Accordion.Body>
+              </Accordion.Item>
+      )
+    }
+
+    MobileElements.push(
+      <Accordion>
+        <Accordion.Item eventKey={mainHead}>
+          <Accordion.Header>{mainHead}</Accordion.Header>
+          <Accordion.Body>
+            <Accordion>
+              {Sec1MobElements}
+            </Accordion>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+    )
+
     let bgcolor = "white";
     if (currMain == mainHead)
       bgcolor = "grey"
+    
     MainElements.push(
       <Nav.Link className='text-center nav-link-desktop' style={{ fontFamily: 'kanit', background: bgcolor }} href="#action1" onClick={(event) => { handleMainSelect(mainHead); handleClick(event) }}>{mainHead}</Nav.Link>
     )
   }
 
   if (currMain) {
-    console.log("curr", Sec1Array[currMain])
     for (let heading of Sec1Array[currMain]) {
       let bgcolor = "white";
       if (currSec1 == heading)
@@ -210,126 +249,7 @@ export const NavigationBar = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <div className='col-lg-8 col-12 megamenu-links'>
-                  <Accordion>
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header>Research</Accordion.Header>
-                      <Accordion.Body>
-                        <Accordion>
-                          <Accordion.Item eventKey='0a'>
-                            <Accordion.Header>Centers</Accordion.Header>
-                            <Accordion.Body>
-                              <Accordion>
-                                <Accordion.Item eventKey='0a0'>
-                                  <Accordion.Header>E-Health Research Centre (EHRC)</Accordion.Header>
-                                  {/* <Accordion.Body></Accordion.Body> */}
-                                </Accordion.Item>
-                                <Accordion.Item eventKey='0a1'>
-                                  <Accordion.Header>Machine Intelligence & Robotics CoE (MINRO)</Accordion.Header>
-                                  <Accordion.Body></Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey='0a2'>
-                                  <Accordion.Header>Centre for IT & Public Policy (CITAPP)</Accordion.Header>
-                                  <Accordion.Body></Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey='0a3'>
-                                  <Accordion.Header>Cognitive Computing CoE(CCC)</Accordion.Header>
-                                  <Accordion.Body></Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey='0a4'>
-                                  <Accordion.Header>COMET Tech Innovation Hub (NM-ICPS)</Accordion.Header>
-                                  <Accordion.Body></Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey='0a5'>
-                                  <Accordion.Header>IIITB Innovation Centre</Accordion.Header>
-                                  <Accordion.Body></Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey='0a6'>
-                                  <Accordion.Header>Modular Open-Source Identity Platform (MOSIP)</Accordion.Header>
-                                  <Accordion.Body></Accordion.Body>
-                                </Accordion.Item>
-                              </Accordion>
-                            </Accordion.Body>
-                          </Accordion.Item>
-                          <Accordion.Item eventKey='0b'>
-                            <Accordion.Header>Labs</Accordion.Header>
-                            <Accordion.Body></Accordion.Body>
-                          </Accordion.Item>
-                          <Accordion.Item eventKey='0c'>
-                            <Accordion.Header>Outreach</Accordion.Header>
-                            <Accordion.Body></Accordion.Body>
-                          </Accordion.Item>
-                          <Accordion.Item eventKey='0d'>
-                            <Accordion.Header>Publications</Accordion.Header>
-                            <Accordion.Body></Accordion.Body>
-                          </Accordion.Item>
-                          <Accordion.Item eventKey='0e'>
-                            <Accordion.Header>Policy</Accordion.Header>
-                            <Accordion.Body></Accordion.Body>
-                          </Accordion.Item>
-                        </Accordion>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="1">
-                      <Accordion.Header>Academics</Accordion.Header>
-                      <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="2">
-                      <Accordion.Header>Campus Life</Accordion.Header>
-                      <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="3">
-                      <Accordion.Header>Media</Accordion.Header>
-                      <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="4">
-                      <Accordion.Header>People</Accordion.Header>
-                      <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="5">
-                      <Accordion.Header>About Us</Accordion.Header>
-                      <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </Accordion>
+                  {MobileElements}
                 </div>
               </Nav>
             </Offcanvas.Body>
