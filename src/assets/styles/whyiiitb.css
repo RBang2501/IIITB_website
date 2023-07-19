@@ -1,0 +1,78 @@
+#why1, #why2,#why3,#why4,#why5,#why6{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.act #why1{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.act #why2{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.act #why3{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+}
+
+.act #why4{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 1.5s;
+}
+
+.act #why5{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 2s;
+}
+
+.act #why6{
+    opacity: 1;
+    transform: translateX(0px);
+    transition-property: transform,opacity !important;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 2.5s;
+}
+
+/* .review-card{
+    background: linear-gradient(
+    to top,
+    rgb(10, 25, 41) 0%,
+    rgb(6, 82, 154) 30%,
+    white 60%,
+    white 100%
+  );
+} */
+
+.review-card{
+    /* border-color: rgb(6, 82, 154) !important; */
+    background: linear-gradient(
+    to top,
+    rgb(6, 82, 154) 0%,
+    rgb(6, 82, 154) 40%,
+    white 40%,
+    white 100%
+  );
+}
