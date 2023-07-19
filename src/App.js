@@ -72,7 +72,7 @@ export const App = () => {
           <Whyiiitb />
           <SocialMediaEmbed />
           <Gallery/> 
-          <AlumniReview/>
+          {/* <AlumniReview/> */}
           <Footer />
         </>
       )}
