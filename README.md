@@ -72,12 +72,6 @@ UI/UX design goals and rules in software engineering are important to ensure tha
 By following these rules, we redesigned the website's homepage.
 
 
-### Built With
-
-* [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-
-
 <!-- GETTING STARTED -->
 ### Prerequisites
 
