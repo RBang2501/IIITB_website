@@ -24,16 +24,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+<!--   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
-  <h3 align="center">Homepage Redesign</h3>
+  <h2 align="center">Homepage Redesign</h2>
 
   <p align="center">
     A modern, aesthetic Redesign!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://iiitb-official.web.app/">View Demo</a>
 <!--     · -->
 <!--     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a> -->
 <!--     · -->
@@ -48,40 +48,34 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Design
 
 <img src='Screenshot 2023-07-19 205744.png'>
 <img src='Screenshot 2023-07-19 205729.png'>
 <img src='Screenshot 2023-07-20 141020.png'>
 
+## About The Project
+
+
 UI/UX design goals and rules in software engineering are important to ensure that software applications are user-friendly, aesthetically pleasing, and effective in meeting user needs. Some key rules include:
 
-Simplicity: Keep the interface simple and intuitive, with clear navigation and minimal clutter.
+1. *Simplicity*: Keep the interface simple and intuitive, with clear navigation and minimal clutter.
 
-Consistency: Maintain consistency in design elements, such as color scheme, typography, and layout, throughout the application.
+2. *Consistency*: Maintain consistency in design elements, such as color scheme, typography, and layout, throughout the application.
 
-Accessibility: Ensure that the application is accessible to users with disabilities, such as those with visual or hearing impairments.
+3. *Accessibility*: Ensure that the application is accessible to users with disabilities, such as those with visual or hearing impairments.
 
-Responsiveness: Create a responsive design that adapts to different screen sizes and devices, providing a consistent user experience across platforms.
+4. *Responsiveness*: Create a responsive design that adapts to different screen sizes and devices, providing a consistent user experience across platforms.
 
-Feedback: Provide feedback to users on their actions, such as confirming successful transactions or alerting them to errors.
-
-User testing: Conduct user testing to evaluate the effectiveness of the design and identify areas for improvement.
+5. *User testing*: Conduct user testing to evaluate the effectiveness of the design and identify areas for improvement.
 
 By following these rules, we redesigned the website's homepage.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -102,10 +96,12 @@ This is an example of how to list things you need to use the software and how to
 2. Install NPM packages
    ```sh
    npm install
+   ```
+3. Run
+   ```sh
    npm start
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
