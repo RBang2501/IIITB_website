@@ -50,9 +50,9 @@
 <!-- ABOUT THE PROJECT -->
 ## Design
 
-<img src='Screenshot 2023-07-19 205744.png'>
-<img src='Screenshot 2023-07-19 205729.png'>
-<img src='Screenshot 2023-07-20 141020.png'>
+<img src='design1.png'>
+<img src='design2.png'>
+<img src='design3.png'>
 
 ## About The Project
 
